@@ -127,7 +127,8 @@
     
   </div>
   <div class="post-page-content">
-  <p>您的好友阿月月突然上线</p>
+  <p>阿月月，现就读于南京邮电大学，每日沉迷学习和玩技术无法自拔。作为一个琴棋（飞行棋）书画都会又能歌善舞（全国中学生广播体操——舞动青春）的女孩子，我为什么要跑来学工科呢？犹记邓布利多，邓校的那句：“你想成为什么样的人比你具备什么样的特质更能决定你的未来。”</p>
+<p>人的一生就是个不停拾取灵魂碎片的过程。你来人间走一趟，不玩点好玩的，不做点有意思的事，不试着自己衡量世事，不去和一些有梦想的魔鬼混在一起，怎么会甘心呢？</p>
 
   </div>
   <!--评论块-->
@@ -158,8 +159,31 @@
     <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
 
 
-<p style="line-height: 45px">Copyright ©  2017  SunnyFHY</p>
-<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+<p >Copyright ©  2017  SunnyFHY</p>
+<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+<p style="font-size: 10px" id="footer-times" data-time="10/01/2018 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
 
   </div>
 </div>
@@ -194,6 +218,8 @@
             menu();
         });
 </script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </body>
 </html>

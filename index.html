@@ -127,6 +127,10 @@
                 
                 <br>
                 
+                <span id="busuanzi_container_site_pv" style="color: white;font-size:10px;line-height: 10px;display: inline-block;height: 10px">
+                你是比基尼海滩的第<span id="busuanzi_value_site_pv"></span>只凤尾鱼
+                </span>
+                
             </p>
         </div>
     </a>
@@ -154,7 +158,7 @@
     
   
     
-      <div class="recent-post-item lazy"style="background-color:#26A69A"  data-original="/images/random/vateral-6.png"  >
+      <div class="recent-post-item lazy"style="background-color:#26A69A"  data-original="/images/random/vateral-11.png"  >
         <a class="recent-post-link" href="/2018/10/30/四旋翼PID调参笔记/">
         <div class="post-hover">
           <!--title-->
@@ -197,7 +201,7 @@
     
   
     
-      <div class="recent-post-item lazy"style="background-color:#26A69A"  data-original="/images/random/vateral-2.png"  >
+      <div class="recent-post-item lazy"style="background-color:#26A69A"  data-original="/images/random/vateral-17.png"  >
         <a class="recent-post-link" href="/2018/10/06/vivadoHLS-0/">
         <div class="post-hover">
           <!--title-->
@@ -240,7 +244,7 @@
     
   
     
-      <div class="recent-post-item lazy"style="background-color:#26A69A"  data-original="/images/random/vateral-9.png"  >
+      <div class="recent-post-item lazy"style="background-color:#26A69A"  data-original="/images/random/vateral-2.png"  >
         <a class="recent-post-link" href="/2018/10/04/uCOSIII1/">
         <div class="post-hover">
           <!--title-->
@@ -296,8 +300,31 @@
     <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
 
 
-<p style="line-height: 45px">Copyright ©  2017  SunnyFHY</p>
-<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+<p >Copyright ©  2017  SunnyFHY</p>
+<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+<p style="font-size: 10px" id="footer-times" data-time="10/01/2018 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
 
   </div>
 </div>
@@ -332,6 +359,8 @@
             menu();
         });
 </script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </body>
 </html>
