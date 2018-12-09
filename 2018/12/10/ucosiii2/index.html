@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="null">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="符涵月">
+  <meta name="description" content="南邮本科生">
+  
+  <title>SunnyFHY</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/source/favicon.ico">
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu" ><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav" >
+    <div class="nav-header"  style="background-image: url(/images/Coconutree_Moon.jpg);background-color:#26A69A">
+    <div class="header-box"><img src="/images/Spongebob.jpg" ondragstart="return false;"></div>
+    <p>SunnyFHY</p>
+    <div class="nav-link">
+        
+        
+        <a  href="https://github.com/SunnyFHY" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off"/>
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a  class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2018/12/">December 2018<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2018/10/">October 2018<span class="archive-count">3</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a   class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/VivadoHLS/">VivadoHLS<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/四旋翼/">四旋翼<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/操作系统/">操作系统<span class="category-count">2</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+<li class="nav-list">
+    <a href="/about" target="_self">
+        <div class="nav-ico"><i class="material-icons">copyright</i> </div><p>关于</p>
+    </a>
+</li>
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-8.png)" >
+  <h2>uCOSIII（二）</h2>
+    
+  <p>作者:SunnyFHY &nbsp&nbsp 发布于:<time datetime="2018-12-09T16:24:41.000Z">
+          2018-12-10
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h1 id="UCOSIII知识点小结"><a href="#UCOSIII知识点小结" class="headerlink" title="UCOSIII知识点小结"></a>UCOSIII知识点小结</h1><p>1、其中最有用的功能应该是时间片轮转法（ roundrobin), 这个是 uC/OS-II 中不支持的，但是现在已经是 uC/OS-III 的一个功能了 </p>
+<p>2、uC/OS-III 被设计用于 32 位处理器， 但是它也能在 16 位或 8 位处理器中很好地工作。</p>
+<p>3、一共有 2 种类型的实时系统：软实时系统和硬实时系统。硬实时系统中，运算超时是不允许发生的，运算超时会导致严重后果。但是在软实时系统中 ， 超时不会导致严重后果  </p>
+<p>4、前后台系统：包含一个无限循环的模块实现需要的操作（后台）。中断处理程序实现异步事件（前台）。前台也叫做中断级，后台也叫作任务级。 </p>
+<p>5、临界操作应该在任务级中被执行，不可避免地必须在中断处理程序中执行也要确保是在很短的时间内完成。 因为这会导致 ISR 占用更长的时间。 通常的， ISR 中使能相关的信息而在后台程序中执行相应的操作。 </p>
+<p>6、ucos-iii中的任务（也叫做线程） 是一段简单的程序， 运行时完全地占用 CPU 。在单 CPU 中，任何时候只有 1 个任务被执行。 </p>
+<p>7、内核的责任是管理任务，协调和切换多个任务依次享用 CPU 。让我们感觉是多个 CPU 在同时运行，也有利于处理模块化的应用 它也负责管理任务间的交流， 系统资源的管理（内存 和I/O ）等。 </p>
+<p>8、uC/OS-III 是一个抢占式内核， 这意味着 uC/OS-III 总是执行最</p>
+<p>重要的就绪任务 </p>
+<p>9、ISR 响应中断请求设备， 但是 ISR 只做非常少的工作。 ISR </p>
+<p>应该标记或发送消息到一个高优先级的任务， 让中断能够快速处理完毕 </p>
+<p>10、系统中加入内核需要额外的支出，因为内核提供服务时需要时间</p>
+<p>去处理。内核占用 CPU 的时间介于 2% 到 4% 之间。 因为 uC/OS-III是一个软件，添加到目标系统中需要额外的 ROM 和 RAM 。 </p>
+<p>11、。 uC/OS-III 内核需要 1K 到 4K 之间的 RAM ， 加上每个任务自己所需的堆栈空间。 至少有 4K 大小 RAM 的处理器才有可能成功移植 uC/OS-III 。 </p>
+<p>12、： uC/OS-III 允许多个任务拥有相同的优先级。 当多个相同优先级的任务就绪时， 并且这个优先级是目前最高的uC/OS-III 会分配用户定义的时间片给每个任务去运行。 每个任务可以定义不同的时间片 。</p>
+<p>13、uC/OS-III 保护临界段可以通过锁定调度器代替关中断。 因此关中断的时间会非常少。这样就使 uC/OS-III 可以响应一些非常快的中断源了。 </p>
+<p>14、 uC/OS-III 允许用户在运行时配置内核。特别的，所有的内核对象如任务、堆栈、信号量、事件标志组、消息队列、 消息、 互斥信号量、 内存分区、 软件定时器等都是在运行时分配的 , 以免在编译时的过度分配。 </p>
+<p>15、uC/OS-III 对任务数量、任务大小、优先级数量无限制。每一个任务需要有自己的堆栈空间。实际上， 任务的数量和大小限制于处理器能提供的内存大小。 </p>
+<p>16、uC/OS-III 支持任何数量的任务、信号量、 互斥信号量、 事件标志组、 消息队列、 软件定时器、 内存分区。 用户在运行时分配所有的内核对象。 </p>
+<p>17、互斥信号量用于资源管理。它是一个内置优先级的特殊类型信号量， 用于消除优先级反转。 互斥信号量可以被嵌套，因此，任务可申请同一个互斥信号量多达 250 次。当然， 互斥信号量的占有者需要释放同等次数。 </p>
+<p>18、： uC/OS-III 允许任务停止自身或者停止另外的任务。 停止一个任务意味着这个任务将不再执行直到被其他的任务复。 停止可以被嵌套到 250 级。 换句话说， 一个任务可以停止另外的任务多达 250 次。 当然， 这个任务必须被恢复同等次数才有资格再次获得 CPU 。 </p>
+<p>19、可以定义任意数量的一次性的、周期性的、或者两者兼有的软件定时器。 定时器是倒计时的， 执行用户定义的行为一直到计数减为 0 。 每一个定时器可以有自己的行为， 如果一个定时器是周期性的，计数减为 0 时会自动重装计数值并执行用户定义的行为。 </p>
+<p>20、： uC/OS-III 允许任务等待多个事件的发生。等待中的任务在所有事件发生后被唤醒 </p>
+<p>21、 uC/OS-III 允许 ISR 或者任务直接地发送信号量给其它任务。 这样就避免了必须产生一个中间级内核对象如一个信号量或者事件标志组只为了标记一个任务。提高了内核性能。 </p>
+<p>22、：每一个任务可以拥有用户可定义的任务寄存器，不同于 CPU 寄存器。uC/OS-III 能检测指针是否为 NULL 、 在 ISR 中调用的</p>
+<p>任务级服务是否允许、 参数在允许范围内、 配置选项的有效性、 函数的执行结果等。每一个 uC/OS-III 的 API 函数返回一个对应于函数调用结果的错误代号 </p>
+<p>23： uC/OS-III 有内置性能测量功能。 能测量每一个任务的执行时间 , 每个任务的堆栈使用情况， 任务的执行次数， CPU的使用情况， ISR 到任务的切换时间 , 任务到任务的切换时间， 列表中的对象的峰值数，关中断、锁调度器平均时间等。 </p>
+<p>24 、uC/OS-III 被设计于能够根 CPU 的架构被优化 uC/OS-III 所用的大部分数据类型能够被改变， 以更好地适应 CPU 固有的字大小。 优先级调度法则可以通过编写一些汇编语言而获益于一些 特 殊 的 指令如位设置、位清除、计数器清零指令（ CLZ ）、find-first-one(FF1) 指令</p>
+<p>25、uC/OS-III 中所有的挂起服务都可以有时间限制， 预防死锁。</p>
+<p>26、uC/OS-III 有时基任务， 时基 ISR 触发时基任务。 uC/OS-III 使27、uC/OS-III使用了哈希列表结构， 可以大大减少处理延时和任务超时所产生的开支。 </p>
+<p>28、uC/OS-III 允许程序员定义 hook 函数。hook 函数允许用户扩展 uC/OS-III 的功能。 </p>
+<p>29、为了测量时间， uC/OS-III 需要一个 16 位或者 32 位的时时间戳计数器。 </p>
+<p>30、 每个 uC/OS-III 的内核对象有一个相关联的名字。 这样</p>
+<p>就能很容易的识别出对象所指定的作用。对象的名字长度没有限制，但是必须以空字符结束。 </p>
+<p>31、每个任务需要创建自己的堆栈。 堆栈的数据类型 CPU_STK 。堆栈可以被静态地分配或者通过 malloc() 动态地分配。若任务将不会被删除，堆栈将一直被使用。 </p>
+<p>32、在大部分处理器中， 中断在启动时是关闭的。 无论如何， 在启动时关闭所有的外设中断是最安全的。 </p>
+<p>33、uC/OS-III 须创建空闲任务 OS_IdleTask （）， 当没有其他任务运行时就运行空闲任务。根 据 配 置 文 件 中 所 uC/OS-III 会 创 建 统 务OS_StatTask() 、 定 时 器任务 OS_TmrTask() 、 中 断队 列 处 理任务OS_IntQTask() 。</p>
+<p>34、 OSTaskCreate() 的第四个参数， 第一次被调用时OSTaskCreate() 接收这个变量， 传递给所创建的任务中的唯一参数”p_arg”。该参数可以是任意类型的指针。 </p>
+<p>35、参数值越小优先级越高。 可以设置优先级数值为 1 到 OS_CFG_PRIO_MAX-2 。 要避免使用优先级 #0 和优先级 </p>
+<p>OS_CFG_PRIO_MAX-1 。 因 为 这些是为 uC/OS-III保留的。</p>
+<p>36、任务的堆栈大 ( 以 CPU_STK 为数据类型而不是字节 ) 。 例如， 如果要分配 1KB 大小的堆栈空间，因为 CPU_STK 是 32 位的，所以这个其值为 256. </p>
+<p>37、）所有的 uC/OS-III 任务需要被设置为无限循环。 </p>
+<p>38、互斥信号量（ mutex ）是一个内核对象，用于保护共享资源。 任务要访问共享资源就必须先获得 mutex 。mutex的拥有者使用完这个资源后就必须释放这个 mutex 。 </p>
+<p>39、消息队列是一个内核对象， ISR 或任务可以直接发送消息到另一个任务。 发送者制定一个消息并将其发送到目标任务的消息 队列。 目标任务等待消息的到达。 </p>
+<p>40、定义消息队列可接受消息的个数。 这个值必须大于 0 。如果</p>
+<p>消息者发送消息数超过了消息接收任务的承受能力。那么消息将会被丢失。可以通过增加消息队列的大小或者提供消息接收任务的优先级提升其承受能力。 </p>
+<p>41、uC/OS-III 定义了一个进入临界段的宏和两个出临界段的宏（退出临界段后是否调用调度器）。 </p>
+<p>42、测得消息是什么时候被发送的， 用户就能测得任务接收这</p>
+<p>个消息所用的时间。 读取现在的时间戳并减去消息被发送时的时</p>
+<p>戳。需注意的是， 消息被发送时， 等待消息的任务可能不会立即接收到消息，因为 ISR 或更高优先级的任务可能抢占了当前任务。显然，测出的时间还包括了测量时消耗的额外时间。 然而减掉测量时所耗时间就是实际上的时间。 </p>
+<p>43、时间戳的控制单元位于 CPU_TS 中。 例如， 如果 CPU 速率为 1MHz ， 时间戳的速率为 1MHz 。 那么CPU_TS 的分辨率为 1 微秒 </p>
+<p>44、当任务第一次执行时， 会传入一个变量 “p_arg” 。这是一个指向 void的指针。 用于变量的地址、 结构体地址、 或者函数的地址等。 如果需要，可以创建多个相同的任务，使用相同的代码（相同任务体），而产生有不同的运行结果。</p>
+<p>45、只运行一次的任务结束时必须通过调用 OSTaskDel() 删除自己。 这样可以使系统中的任务数减少。 </p>
+<p>46、一个任务可以创建其它任务（ 调 OSTaskCreate() ）、 停止或者恢复其它 ( 调用 OSTaskSuspned() 和 OSTaskResume()) 、 提交信号量到其它任务、 发送消息到其它任务、 提供共享资源等。 换句话说， 任务不是只被限制于“等待事件”。 </p>
+<p>47、在嵌入式系统中动态地分配堆栈是被允许的，但是，一旦堆栈被动态分配，它就不能被回收。 换句话说， 对于有些不需要被删除的任务， 动态分配它们的堆栈是一种很好的解决方法。</p>
+<p>48、可以人工地计算出任务需要的堆栈空间大小，逐级嵌套所有可能</p>
+<p>被调用的函数， 添加被调用函数中所有的参数， 添加上下文切换时的CPU 寄存器空间， 添加切换到中断时所需的 CPU 寄存器空间，添加处理 ISRs 所需的堆栈空间。 把上述的全部相加， 得到的值定义为最小的需求空间。 因为我们不可能计算出精确的堆栈空间。 通常是再乘以 1.5 以确保任务的安全运行。</p>
+<p>49、另一种防止堆栈溢出的方法是分配的空间远大于可能需要的。  首先， 当任务创建时其堆栈被清零。 程序运行一段时间后，通过一个低优先级任务， 计算该任务整个堆栈中值为 0 的内存大小。 这是一种非常有效的方法。 注意的是， 程序需用运行很长的时间以让堆栈达到其需要的最大值。 </p>
+<p>50、从用户的观点来看，任务可以是有 5 种状态，休眠状态，就绪状态，运行状态，挂起状态，中断状态 。</p>
+<p>51、调用 OSTaskSuspend() 会任务无条件地停止运行。 有些时候调用 OSTaskSuspend() 不是为了等待某个事件的发生，而是等待另一个任务调用 OSTaskResume() 函数恢复这个任务。 </p>
+<p>52、任务控制块是被 uC/OS-III 用于维护任务的一个结构体。 每个任务都必须有自的己 TCB 。TCB 中的一些变量可以根据具体应用进行裁剪。用户程序不应该访问这些变量（尤其不能更改它们） </p>
+<p>53、有些处理器有硬件寄存器可以自动地检测并确保堆栈不发生溢出， 如果处理器没有这些硬件施，ucos-iii的堆栈检测可以用软件模拟。 然而， 软件模拟不如硬件可靠。</p>
+<p>54、在 uC/OS-III 初始化的时候，它会创建至少 2 个内部的任务 (OS_IdleTask() 和 OS_TickTask()) ， 3 个可选择的任务（ OS_StatTask() ，OS_TmrTaks() ， OS_IntQTask() ）。这些可选择的任务在编译时由OS_CFG.H 中的配置决定。 </p>
+<p>55、当 CPU 中没有其它就绪任务运行时，空闲会被运行。空闲任务是一个无限循环的不会等待任何事件的任务。空闲任务的每次循环，都会调用 OSIdleTaskHook() 函数，这个函数提供给用户扩展应用，如让处理器进入低功耗模式等。</p>
+<p>56、） 使用硬件定时器并被设置为以 10 到 1000Hz 之间的频率</p>
+<p>产生时基中断，时基中断并不是一定要用 CPU 产生， 事实上， 它可以从其他的具有较精确的周期性时间源中获得，比如电源线（ 50-60Hz ）等。 </p>
+<p>57、当时基任务执行时，它会遍历挂起队列中所有等待期满的任务或等待事件超时的任务。 它会就绪时基列表中的那些期满、超时的任务。使用轮转法遍历队列（此队列为二维数组的形式）大大减少了遍历队列所占用CPU的时间。</p>
+<p>58、统计任务能够统计总的 CPU 使用率, 每个任务的 CPU使用率，每个任务的堆栈使用量。 </p>
+<p>59软件定时器通常需要的频率可由用户设置， 通过软件将时基分频。 换句话说如果时基速率为 1000Hz, 但是想要的定时器速率为 10Hz, 软件定时器任务会每 100 个时基被标记一次。时基任务的优先级要高于定时器任务，定时器任务的优先级需要于统计任务 </p>
+<p>60、当一个任务创建了一个具有相同优先级的任务，这个新任务会被</p>
+<p>添加到该优先级队列的尾部（因为具有相同优先级情况下， 没有理由让新任务先运行）。然而，当一个任务创建了一个具有不同优先级的任务时，这个新的任务就会放到对应优先级列表中的首部。注意：正在运行的任务也被放在就绪列表中。 </p>
+<p>61会发生调度的调度点：任务被标记或发送消息给另一个任务 </p>
+<p>、任务调用 OSTimeDly() 或 OSTimeDlyHMSM()、任务所等待的事件发生或超时、任务被取消挂起 、新任务被创建 、任务被删除 、内核对象被删除 、任务改变自身的优先级或其它任务的优先级 、任务通过调用OSTaskSuspend() 停止自身、任务调用OSTaskResume() 恢复其它停止了的任务、退出中断服务程序 、通过调用 OSSchedUnlock() 调度器被解锁、调用OSSchedRoundRobinYield() 任务放弃了分配给它的时间片、用户调用OSSched() </p>
+<p>62、任务提交一个事件后调用调度器。 当然， 任务可以一次性提交多个事件， 但在最后一个事件提交后才调用调度器。 </p>
+<p>63、uC/OS-III 有 2 种调度方式： OSSched() 被用于任务级。 OSIntExit()被用于中断级。由于中断产生时已经将任务 A 的状态保存在任务 A 的堆栈中，所以 ISR 返回时无需再保存任务 A 的状态，而是直接载入任务 B 的 CPU 寄存器到硬件CPU 寄存器中即可 </p>
+<p>64、当 uC/OS-III 转向执行另一个任务的时候，它保存了当前任务的 CPU 寄存器到堆栈。并从新任务堆栈中 相关内容载入CPU 寄存器。这个过程叫做上下文切换。上下文切换需要一些开支。 CPU 的寄存器越多， 开支越大。 上下文切换的时间基本取决于有多少个 CPU 寄存器需要被存储和载人。保存状态寄存器和程序指针寄存器到当前的任务堆栈。保存的顺序与中断发生时 CPU 保存寄存器的顺序相同。</p>
+<p>65、CPU 处理中断有两种模式： 1 所有的中断指向同一个 ISR2 每个中断指向各自的 ISR 。） ISR 的工作完成后， 用户必须调用 OSIntExit() 告诉 uC/OS-III中断服务程序已经完成。</p>
+<p>66、uC/OS-III 有两种方法处理来自于中断的时间； 直接提交和延迟提交。其区别在于如何处置中断中所产生的事件。延迟提交的方式为事件不是直接发送给任务， 而是先发送到中断队列。 然后中断处理任务（其优先级为0）被就绪，这样，事件的提交便可在任务级完成，从而减少了ISR处理的时间。</p>
+<p>67、uC/OS-III 必须有系统时基是普遍的误解。 事实上， 很多低功耗应用中没有系统时基，因为需额外的能量用于维护时基源。换句话说 ，将能量用于维护时基源是不合理的。因为 uC/OS-III 是一个可抢占式内核， 一个事件可以唤醒进入低功耗模式处理器（按键或其它事件）没有时基意味着用户不能再对任务进行延时或超时设置。 用户在研发低功耗产品时可以考虑这个特性。 </p>
+<p>68、任务在挂起队列中是根据优先级分类的。 高优先级任务被</p>
+<p>放置在队列的头部，低优先级任务被放置在队列的尾部。 </p>
+<p>69、任务不是直接链接到挂起队列中， 而是通过叫OS_PEND_DATA 的结构体作为媒介。 这个媒介在任务被挂起时分配到任务堆栈的。挂起队列中的对应指针指向该结构体。</p>
+<p>70、延时函数OSTimeDly()，任务调用这个函数后就会被挂起直到期满。以时基为单位，但需注意，当任务在时基中断将要到来时被挂起，那么实际的延时时基会少 1 个时基。这个函数可以有设置为三种模式：相对延时模式，周期性延时模式，绝对延时模式（用于对时间要求很高的应用）。 </p>
+<p>71、uC/OS-III 定 时 器 的 分 辨 率 决 定 于 时 基 频率。定时器可以被设置为 3 种模式：一次性定时模式， 无初始定时周期模式，有初始定时周期模式 。如果定时器被停止， 那其定时值也将被停止， 直到定时器被恢复时，定时器值继续被递减。不能在定时器的执行代码中等待事件发生。否则定时器任务会被挂起，导致定时器任务崩溃。 </p>
+<p>72、uC/OS-III 可能要维护上百个定时器。 使用定时器列表会大大降低更新定时器列表所占用的 CPU 时间。 定时器列表类似于时基列表，以二维数组的形式存储记录。</p>
+<p>73、uC/OS-III提供关中断方式、锁调度器方式、、信号量方式、mutex方式保护共享资源。只有任务才允许使用信号量，ISR是不允许的。用信号量保护共享资源不会导致中断延迟。当任务在执行信号量所保护的共享资源时，ISR或高优先级任务可以抢占该任务。</p>
+<p>74、信号量经常被过度使用。很多情况下，访问一个简短的共享资源时不推荐使用信号量，请求和释放信号量会消耗CPU时间。通过关/开中断能更有效地执行这些操作。信号量会导致一种严重的问题：优先级反转。</p>
+<p>75、优先级反转是实时系统中的一个常见问题，仅存在于基于优先级的抢占式内核中。uC/OS-III支持一种特殊类型的二值信号量叫做mutex，用于解决优先级反转问题。</p>
+<p>76、死锁，就是两个任务互相等待对方所占用的资源的情况。除一般的防死锁方式外，uC/OS-II还可以在申请信号量或mutex时允许设置其期限，这样能防止死锁，但是同样的死锁可能稍后再次出现。</p>
+<p>77、uC/OS-III中用于同步的两种机制：信号量和事件标志组。两个任务间可以用一个信号量实现单向同步，用两个信号量实现双向同步。当任务要与多个事件同步时可以使用事件标志。若其中的任意一</p>
+<p>个事件发生时任务被就绪，叫做逻辑或(OR)。若所有的事件都发生时任务被就绪，叫做逻辑与（AND）。</p>
+<p>78、有些情况下任务或ISR与另一个任务间进行通信，这种信息交换叫做作业间的通信。可以有两种方法实现这种通信：全局变量、发送消息。需注意的是：任务与ISR通信只能通过全局变量。如果全局变量被ISR改变，任务将不会知道全局变量被改变，除非该任务检测该变量或者ISR标记任务告知该变量被改变。</p>
+<p>79、消息可以被发送到媒介—消息队列中，也可以直接发送给任务，因为uC/OS-III中每个任务都有其内建的消息队列。如果多个任务等待这个消息时建议将该消息发送到外部的消息队列。当只有一个任务等待该消息时建议直接将消息发送给任务。</p>
+<p>80、消息中包含一个指向数据的指针、该数据的大小、时间戳变量。该指针可以指向数据区域甚至是一个函数。当然，消息的发送方和消息的接收方都应该知道消息所包含的意义。</p>
+<p>81、消息队列是先入先出模式（FIFO）。然而，uC/OS-III也可以将其设置为后入先出模式（LIFO）。若任务或ISR发送紧急消息给另一个任务时，后入先出模式是非常有用的，在这种情况下，该紧急消息绕过消息队列中的其他消息。</p>
+<p> 82、任务A发送多个消息给任务B，如果更高优先级的任务抢占了任务B，那么任务A所存放在消息队列中的数据就可能被溢出。解决这个问题的一种方法是在处理中添加流量控制：所有任务在发送消息给任务B之前必须获得信号量。任务B消息队列的空余量为多少，信号量计数值就为多少。</p>
+<p>83、任务可以等待多个内核对象。然而，uC/OS-III只允许任务同时等待多个信号量或消息队列。换句话说，不能同时等待多个事件标志组或mutex。但这将花费uC/OS-III较多时间去处理。</p>
+<p>84、可以通过使用编译器提供的函数malloc()和free()动态地分配和释放内存快。然而，在嵌入式实时系统中使用malloc()和free()可能是非常危险的。因为它可能会导致很多内存碎片。</p>
+<p>85、ucos-iii可以创建多个大小不同的内存分区，一个内存分区可被设置为多个大小相同的任务块，用于存储临时性的数据。根据需求设置，但内存块被分配后必须返回给它所在的内存分区，这种管理方式仅会导致内存块块内的碎片。从而减少了内存碎片。</p>
+
+  </div>
+  <!--评论块-->
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2018/12/09/hls2/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#UCOSIII知识点小结"><span class="post-toc-number">1.</span> <span class="post-toc-text">UCOSIII知识点小结</span></a></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p >Copyright ©  2017  SunnyFHY</p>
+<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+<p style="font-size: 10px" id="footer-times" data-time="10/01/2018 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>
