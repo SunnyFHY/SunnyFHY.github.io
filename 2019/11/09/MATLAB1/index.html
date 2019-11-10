@@ -117,7 +117,7 @@
   <div id="content-inner">
     
 <article id="post">
-  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-7.png)" >
+  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-19.png)" >
   <h2>MATLAB通信仿真（一）</h2>
     
   <p>作者:SunnyFHY &nbsp&nbsp 发布于:<time datetime="2019-11-09T06:34:35.000Z">
@@ -128,6 +128,7 @@
   </div>
   <div class="post-page-content">
   <h1 id="MATLAB通信仿真（一）"><a href="#MATLAB通信仿真（一）" class="headerlink" title="MATLAB通信仿真（一）"></a>MATLAB通信仿真（一）</h1><p>​                            此系列资料为我的matlab通信仿真学习笔记以及通院科协授课用资料</p>
+<p>​                                              内容参考蔡凡老师的公众号和CSDN博客</p>
 <h2 id="MATLAB基础知识"><a href="#MATLAB基础知识" class="headerlink" title="MATLAB基础知识"></a>MATLAB基础知识</h2><h3 id="MATLAB概述"><a href="#MATLAB概述" class="headerlink" title="MATLAB概述"></a>MATLAB概述</h3><h4 id="MATLAB简介"><a href="#MATLAB简介" class="headerlink" title="MATLAB简介"></a>MATLAB简介</h4><p>​       MATLAB（matrix&amp;laboratory） 是美国MathWorks公司出品的商业数学软件，用于算法开发、数据可视化、数据分析以及数值计算的高级技术计算语言和交互式环境，主要包括MATLAB和Simulink两大部分。   </p>
 <p>​       它在数学类科技应用软件中在数值计算方面首屈一指。MATLAB可以进行矩阵运算、绘制函数和数据、实现算法、创建用户界面、连接其他编程语言的程序等，主要应用于工程计算、控制设计、信号处理与通信、图像处理、信号检测、金融建模设计与分析等领域。</p>
 <h4 id="MATLAB系统结构"><a href="#MATLAB系统结构" class="headerlink" title="MATLAB系统结构"></a>MATLAB系统结构</h4><p>　　<strong>开发环境</strong></p>
@@ -141,23 +142,23 @@
 <p>　　<strong>程序接口</strong></p>
 <p>　　MATLAB应用程序接口（API）是一个使MATLAB语言能与C、Fortran等其它高级编程语言进行交互的函数库。该函数库的函数通过调用动态链接库（DLL）实现与MATLAB文件的数据交换，其主要功能包括在MATLAB中调用C和Fortran程序，以及在MATLAB与其它应用程序间建立客户、服务器关系。</p>
 <h4 id="MATLAB界面介绍"><a href="#MATLAB界面介绍" class="headerlink" title="MATLAB界面介绍"></a>MATLAB界面介绍</h4><p>打开MATLAB可见如下<strong>主界面</strong></p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573254849370.png" alt="1573254849370"></p>
+<p><img src="/2019/11/09/MATLAB1/1573254849370.png" alt="1573254849370"></p>
 <p>主界面分为五个区域：工具栏、文件路径，当前文件夹，命令行窗口以及工作变量区域</p>
 <p><strong>工具栏</strong> </p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573255424804.png" alt="1573255424804"></p>
+<p><img src="/2019/11/09/MATLAB1/1573255424804.png" alt="1573255424804"></p>
 <p>工具栏区域包括文件、变量、代码、simulink、坏境设置和资源六大部分 </p>
 <p><strong>文件路径</strong></p>
 <p>文件路径是当前文件夹的地址，在该区域可以实现文件路径的切换 </p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573255646816.png" alt="1573255646816"></p>
+<p><img src="/2019/11/09/MATLAB1/1573255646816.png" alt="1573255646816"></p>
 <p><strong>当前文件夹</strong></p>
 <p>当前文件夹是显示当前文件路径下所有文件的窗口，可以在此双击打开所需要的不同格式文件</p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573255901880.png" alt="1573255901880"></p>
+<p><img src="/2019/11/09/MATLAB1/1573255901880.png" alt="1573255901880"></p>
 <p><strong>命令行窗口</strong></p>
 <p>命令窗口是进行一系列命令输入的地方，当有指令输入并按下Enter键时，软件会自动执行该条指令，并显示出该命令的结果 </p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573256069978.png" alt="1573256069978"></p>
+<p><img src="/2019/11/09/MATLAB1/1573256069978.png" alt="1573256069978"></p>
 <p><strong>工作变量区</strong></p>
 <p>工作变量区域是存放所执行程序中涉及到的所有变量值的空间，可以在该区域双击某变量查看其具体的变量表示情况  </p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573256148715.png" alt="1573256148715"></p>
+<p><img src="/2019/11/09/MATLAB1/1573256148715.png" alt="1573256148715"></p>
 <h4 id="MATLAB的变量、运算符与表达式、常用命令"><a href="#MATLAB的变量、运算符与表达式、常用命令" class="headerlink" title="MATLAB的变量、运算符与表达式、常用命令"></a>MATLAB的变量、运算符与表达式、常用命令</h4><p><strong>MATLAB中的变量</strong></p>
 <p>MATLAB并不要求事先对所使用的变量进行声明，也不需要指定变量类型，MATLAB语言会自动依据所赋予变量的值或对变量所进行的操作来识别变量的类型。在赋值过程中如果赋值变量已存在时，MATLAB语言将使用新值代替旧值，并以新值类型代替旧值类型。</p>
 <p>在MATLAB语言中变量的<strong>命名应遵循如下规则</strong>：</p>
@@ -166,7 +167,7 @@
 <p>（3）变量名以字母开头，可以是字母、数字、下划线组成，但不能使用标点和空格。</p>
 <p>与其他的程序设计语言相同，在MATLAB语言中也存在变量作用域的问题。在未加特殊说明的情况下，MATLAB语言将所识别的一切变量视为局部变量，即仅在其使用的M文件内有效。若要将变量定义为全局变量，则应当对变量进行说明，即在该变量前加关键字global。一般来说全局变量均用大写的英文字符表示。</p>
 <p><strong>MATLAB 中的运算符与表达式</strong></p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573258784375.png" alt="1573258784375"></p>
+<p><img src="/2019/11/09/MATLAB1/1573258784375.png" alt="1573258784375"></p>
 <p><strong>MATLAB中的常用命令</strong></p>
 <ul>
 <li><code>clc</code> 清空命令窗口</li>
@@ -178,9 +179,9 @@
 <li>help&lt;命令名&gt;  查询所列命令的帮助信息 </li>
 <li><code>exit/quit</code> 关闭软件</li>
 </ul>
-<h3 id="MATLAB-M文件知识"><a href="#MATLAB-M文件知识" class="headerlink" title="MATLAB  M文件知识"></a>MATLAB  M文件知识</h3><p><strong>脚本式m文件</strong><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573261008198.png" alt="1573261008198"></p>
+<h3 id="MATLAB-M文件知识"><a href="#MATLAB-M文件知识" class="headerlink" title="MATLAB  M文件知识"></a>MATLAB  M文件知识</h3><p><strong>脚本式m文件</strong><img src="/2019/11/09/MATLAB1/1573261008198.png" alt="1573261008198"></p>
 <p>脚本就是自动执行逐条命令的文件。如果编写了一个脚本式M文件，点击run就会自动一条一条命令顺序执行。和在命令窗写一条命令、执行一次的效果相同，过程中的变量都会被保存。 </p>
-<p><strong>函数式m文件</strong><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573261054626.png" alt="1573261054626"></p>
+<p><strong>函数式m文件</strong><img src="/2019/11/09/MATLAB1/1573261054626.png" alt="1573261054626"></p>
 <p>函数式m文件封装好特定功能的函数以供调用。此类m文件开头一般为如下格式，用以表明该m文件为函数式m文件。</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="params">[输出参数形式]</span> = 函数名 （函数形参表）</span></div><div class="line"></div><div class="line"><span class="comment">%注释说明语句段</span></div><div class="line"></div><div class="line"><span class="comment">%程序语句段</span></div></pre></td></tr></table></figure>
 <p><strong>新建m文件的方法</strong></p>
@@ -293,7 +294,7 @@
 <p><code>subplot(m,n,p)</code>,其中m和n指定将图形窗口分成m*n个绘图区，p指定当前活动区。 默认顺序从左到右，自上而下。</p>
 <p><strong>图形标识</strong></p>
 <p>在title（）、xlabel（）、ylabel（）、zlabel（）、text () 等函数中填入正确参数为绘制的图形添加标题、坐标轴标注 、文本标注。</p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573269906162.png" alt="1573269906162"></p>
+<p><img src="/2019/11/09/MATLAB1/1573269906162.png" alt="1573269906162"></p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">title(<span class="string">'图形标题'</span>,<span class="string">'属性名'</span>,<span class="string">'属性值'</span>)</div><div class="line">text(x,y,<span class="string">'说明'</span>)   xy为文本的坐标位置</div><div class="line">xlabel(<span class="string">'x轴说明'</span>)</div><div class="line">ylabel(<span class="string">'y轴说明'</span>)</div><div class="line">z轴同理</div><div class="line"></div><div class="line">例<span class="number">5</span></div><div class="line">title(<span class="string">'y=cos&#123;\omega&#125;t'</span>,<span class="string">'FontSize'</span>,<span class="string">'24'</span>)</div><div class="line">text(<span class="number">3</span>, <span class="number">0.28</span>, <span class="string">'\leftarrow sin(x)'</span>)</div></pre></td></tr></table></figure>
 <p><strong>坐标系选取</strong></p>
 <p><code>极坐标系</code></p>
@@ -303,7 +304,7 @@
 <p><code>对数坐标</code></p>
 <p>通信仿真中常用于绘制误码率曲线</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">semilogx(x1, y1, <span class="string">'选项1'</span>, x2, y2, <span class="string">'选项2'</span>, …) </div><div class="line"></div><div class="line">semilogy(x1, y1, <span class="string">'选项1'</span>, x2, y2, <span class="string">'选项2'</span>, …) </div><div class="line"></div><div class="line">loglog(x1, y1, <span class="string">'选项1'</span>, x2, y2,<span class="string">'选项2'</span>, …) </div><div class="line"></div><div class="line">plotyy(x1,y1,<span class="string">'选项'</span>)双y轴坐标绘图</div><div class="line"></div><div class="line">例<span class="number">7</span> </div><div class="line">semilogy(ebno,th161_01_bit_err_ratio,<span class="string">'-*'</span>,ebno,th161_05_bit_err_ratio,<span class="string">'r-o'</span>,ebno,th161_075_bit_err_ratio,<span class="string">'k-&gt;'</span>);</div><div class="line">xlabel(<span class="string">'比特信噪比'</span>);</div><div class="line">ylabel(<span class="string">'误码率 '</span>);</div></pre></td></tr></table></figure>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573276068497.png" alt="1573276068497"></p>
+<p><img src="/2019/11/09/MATLAB1/1573276068497.png" alt="1573276068497"></p>
 <h3 id="MATLAB流程控制"><a href="#MATLAB流程控制" class="headerlink" title="MATLAB流程控制"></a>MATLAB流程控制</h3><p>if switch for while语句结构和C语言基本一致</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>  表达式<span class="number">1</span></div><div class="line"></div><div class="line">执行语句<span class="number">1</span></div><div class="line"></div><div class="line"><span class="keyword">elseif</span> 表达式<span class="number">2</span></div><div class="line"></div><div class="line">执行语句<span class="number">2</span></div><div class="line"></div><div class="line"><span class="keyword">else</span></div><div class="line"></div><div class="line">    语句n</div><div class="line"></div><div class="line"><span class="keyword">end</span>    </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">switch</span>   表达式</div><div class="line"></div><div class="line">   <span class="keyword">case</span>  常量表达式<span class="number">1</span></div><div class="line"></div><div class="line">         语句块<span class="number">1</span></div><div class="line"></div><div class="line">   <span class="keyword">case</span>   常量表达式<span class="number">2</span></div><div class="line"></div><div class="line">         语句块<span class="number">2</span></div><div class="line"></div><div class="line">   <span class="keyword">case</span>   &#123;常量表达式n，常量表达式n+<span class="number">1</span>，…&#125;</div><div class="line"></div><div class="line">         语句块n</div><div class="line"></div><div class="line"><span class="keyword">otherwise</span></div><div class="line"></div><div class="line">语句块n+<span class="number">1</span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">while</span> 表达式</div><div class="line"></div><div class="line">循环体语句</div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">for</span> <span class="built_in">i</span>=表达式</div><div class="line"></div><div class="line">循环体语句</div><div class="line"></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
 <p>另外还有一种流控结构：试探结构</p>
@@ -313,12 +314,12 @@
 <p><a href="https://ww2.mathworks.cn/help/matlab/ref/try.html" target="_blank" rel="external">https://ww2.mathworks.cn/help/matlab/ref/try.html</a></p>
 <h3 id="MATLAB文件操作"><a href="#MATLAB文件操作" class="headerlink" title="MATLAB文件操作"></a>MATLAB文件操作</h3><p>matlab可对音频文件进行采样、也可对图像、视频文件进行处理，可以在这些文件基础上运用数字信号处理的知识以及进行算法研究。</p>
 <p>以下给出基础文件操作函数，需要用时使用help&lt;函数名&gt;查询matlab帮助文档。</p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281160936.png" alt="1573281160936"></p>
+<p><img src="/2019/11/09/MATLAB1/1573281160936.png" alt="1573281160936"></p>
 <p><strong>此处新版本可用audioread()函数读取多种格式的音频文件</strong></p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281242703.png" alt="1573281242703"></p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281110649.png" alt="1573281110649"></p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281091952.png" alt="1573281091952"></p>
-<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281068402.png" alt="1573281068402"></p>
+<p><img src="/2019/11/09/MATLAB1/1573281242703.png" alt="1573281242703"></p>
+<p><img src="/2019/11/09/MATLAB1/1573281110649.png" alt="1573281110649"></p>
+<p><img src="/2019/11/09/MATLAB1/1573281091952.png" alt="1573281091952"></p>
+<p><img src="/2019/11/09/MATLAB1/1573281068402.png" alt="1573281068402"></p>
 
   </div>
   <!--评论块-->

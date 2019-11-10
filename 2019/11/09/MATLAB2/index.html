@@ -117,7 +117,7 @@
   <div id="content-inner">
     
 <article id="post">
-  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-2.png)" >
+  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-11.png)" >
   <h2>MATLAB通信仿真（二）</h2>
     
   <p>作者:SunnyFHY &nbsp&nbsp 发布于:<time datetime="2019-11-09T10:02:44.000Z">
@@ -128,21 +128,22 @@
   </div>
   <div class="post-page-content">
   <h1 id="MATLAB通信仿真（二）"><a href="#MATLAB通信仿真（二）" class="headerlink" title="MATLAB通信仿真（二）"></a>MATLAB通信仿真（二）</h1><p>​                            此系列资料为我的matlab通信仿真学习笔记以及通院科协授课用资料</p>
+<p>​                                              内容参考杜勇老师的书和蔡凡老师的公众号</p>
 <h2 id="通信仿真基础知识"><a href="#通信仿真基础知识" class="headerlink" title="通信仿真基础知识"></a>通信仿真基础知识</h2><h3 id="数字通信系统基础概念"><a href="#数字通信系统基础概念" class="headerlink" title="数字通信系统基础概念"></a>数字通信系统基础概念</h3><h4 id="与频谱相关的概念"><a href="#与频谱相关的概念" class="headerlink" title="与频谱相关的概念"></a>与频谱相关的概念</h4><p> 在数字通信系统中，我们会经常提到频谱的概念，频域分析也是信号分析最基本和最 广泛使用的方法，通信人员最直接的体验就是用频谱分析仪分析测试信号的频谱。与频谱 相关的概念有很多，如幅度谱、相位谱、功率谱和能量谱等，常常让人很糊涂，搞不清其中的关系。在信号分析中经常会出现负频率成分，这又到底是怎么回事呢？现实中会存在 具有负频率成分的信号吗？ </p>
 <p><strong>1.傅里叶变换</strong></p>
 <p>我们知道，傅里叶级数其实是用不同频率的正弦信号来表示各种信号（或曲线）。为什 么我们要用正弦曲线来代替原来的曲线呢？比如我们也还可以用方波或三角波来代替呀。 分解信号的方法是无穷多的，但分解信号的目的是为了更加简单地处理原来的信号。用正余弦来表示原信号会更加简单，因为正余弦拥有原信号所不具有的性质：正弦曲线保真度。 一个正余弦曲线信号输入后，输出仍然是正余弦曲线，只有幅度和相位可能发生变化，但是频率和波的形状仍是一样的。由于只有正余弦曲线才拥有这样的性质，我们才不用方波或三角波来表示。 </p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573289232933.png" alt="1573289232933"></p>
+<p><img src="/2019/11/09/MATLAB2/1573289232933.png" alt="1573289232933"></p>
 <p>关于傅里叶变换的原理在此不再多做讨论，在任何一本讨论信号与系统的书籍中均可以找到其详细的理论推导。这里，我们起码需要确立关于信号处理中的一个基本概念 如果信号在频域是离散的，则该信号在时域就表现为周期性的时间函数；相反，在时域上 是离散的，则该信号在频域必然表现为周期性的频率函数。不难设想，如果时域信号不仅是离散的，而且是周期的，那么由于它时域离散，其频谱必是周期的，又由于时域是周期的，相应的频谱必是离散的。换句话说，一个离散周期时间序列，它一定具有既是周期又是离散的频谱。我们还可以得出一个结论：一个域的离散就必然造成另一个域的周期延拓， 这种离散变换，本质上都是周期的。</p>
 <p><strong>2.功率谱与能量谱</strong></p>
 <p>对一个时域信号进行傅里叶变换，就可以得到信号的频谱，信号的频谱由两部分构成: 幅度谱和相位谱。那么，什么是功率谱呢？什么又是能量谱呢？功率谱、能量谱与信号的频谱有什么关系呢？</p>
 <p>要区分功率谱和能量谱，首先要清楚两种不同类型的信号：功率有限信号和能量有限信号。</p>
 <p>信号的归一化能量（简称信号的能量）定义为信号电压或电流f(t)加到1Ω电阻上所消耗的能量，表示为</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573289434777.png" alt="1573289434777"></p>
+<p><img src="/2019/11/09/MATLAB2/1573289434777.png" alt="1573289434777"></p>
 <p>通常把能量为有限值的称为能量有限信号或简称能量信号。在实际应用中，一般的非周期信号属于能量信号。然而，对于像周期信号、阶跃信号，以及符号函数等这一类的信号，显然其能量积分无穷大，此时，一般不再研究其能量，而是研究信号的平均功率。 </p>
 <p>信号的平均功率（简称信号的功率）是指信号电压或电流在1Ω电阻上所消耗的功率， 表示为 </p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573289646702.png" alt="1573289646702"></p>
+<p><img src="/2019/11/09/MATLAB2/1573289646702.png" alt="1573289646702"></p>
 <p>f(t)在一个时间段[T1,T2]上的平均功率为 </p>
-<p>​                                      <img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573289788553.png" alt="1573289788553"></p>
+<p>​                                      <img src="/2019/11/09/MATLAB2/1573289788553.png" alt="1573289788553"></p>
 <p>如果信号的功率是有限的，那么称为功率有限信号，简称功率信号。系统中的波形要么具有能量值，要么具有功率值，因为能量有限的信号功率为零，而功率有限的信号能量为无穷大。一般来说，周期信号和随机信号是功率信号，而非周期的确定信号是能量信号。将信号区分为能量信号和功率信号可以简化对各种信号和噪声的数学分析。还有一类信号 的功率和能量都是无限的，如f(t)=t这类信号很少会用到。 </p>
 <p>了解信号可能是能量信号，也可能是功率信号后，就可以很好地理解功率谱和能量谱的概念。对于能量信号，常用能量谱来描述。所谓的能量谱，也称为能量谱密度，是指用密度的概念表示信号能量在各频率点的分布情况。也就是说，对能量谱在频域上积分就可 以得到信号的能量。能量谱是信号幅度谱的模的平方，其量纲是焦/赫。对于功率信号，常 用功率谱来描述。所谓的功率谱，也称为功率谱密度，是指用密度的概念表示信号功率在 各频率点的分布情况。对功率谱在频域上积分就可以得到信号的功率。从理论上来说，功率谱是信号自相关函数的傅里叶变换。因为功率信号不满足傅里叶变换条件，其频谱通常不存在，维纳-辛钦定理证明了自相关函数和傅里叶变换之间的对应关系。在工程应用中， 即便是功率信号，由于持续的时间有限，可以直接对信号进行傅里叶变换，然后对得到的幅度谱的模求平方，再除以持续时间来估计信号的功率谱。 </p>
 <p>对于确定性的信号，特别是非周期的确定性信号，常用能量谱来描述。而对于随机信号，由于持续时间无限长，不满足绝对可积与能量可积的条件，因此不存在傅里叶变换， 所以通常用功率谱来描述。周期性的信号，也同样不满足傅里叶变换的条件，常用功率谱 来描述，这些在前面己经有所说明。只有如单频正弦信号等很少的特殊信号，在引入冲激函数之后，才可以求解信号的傅里叶变换。 </p>
@@ -152,9 +153,9 @@
 <h4 id="带宽是如何定义的"><a href="#带宽是如何定义的" class="headerlink" title="带宽是如何定义的"></a>带宽是如何定义的</h4><p>信号带宽、滤波器带宽、3 dB带宽、半功率带宽、信道带宽，这些概念的准确定义是什么？它们是一回事吗，或者之间有什么关联？ </p>
 <p><strong>1.信号带宽 </strong></p>
 <p>对于一个经载波调制的脉冲信号：Xc(t)  来讲，其频率范围覆盖了整个频域，单边带功率谱密度具有如下的表达形式</p>
-<p>​                                          <img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573290623222.png" alt="1573290623222"></p>
+<p>​                                          <img src="/2019/11/09/MATLAB2/1573290623222.png" alt="1573290623222"></p>
 <p>式中，fc是载波频率，T为脉冲持续时间。Xc(t)的功率谱密度如图示，大多数数字调制方式产生的信号频谱形状大致如此。 </p>
-<p> <img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307475798.png" alt="1573307475798"></p>
+<p> <img src="/2019/11/09/MATLAB2/1573307475798.png" alt="1573307475798"></p>
 <p>(a)半功率带宽；（b)等效噪声带宽；（c)零点到零点带宽；（d)99%功率带宽；（e)限制带外衰减35dB带宽 </p>
 <p>以下是图中几种信号带宽的定义。</p>
 <p>(1)  半功率带宽（Half-Power Bandwidth):指Gx(f)的功率下降到峰值的一半，或此峰值下降3 dB的两频率点之间的间隔。因此，半功率带宽也叫作3 dB带宽。</p>
@@ -172,7 +173,7 @@
 <p>早在1924年，贝尔实验室的研究员亨利•奈奎斯特就推导出了有限带宽无噪声信道的极限波特率，称为奈奎斯特定理。奈奎斯特定理指出，若信道带宽为W,则最大码元速率(Baud)。数据速率和波特率是两个不同的概念。若码元取两个离散值， 则一个码元携带1比特（bit)信息。若码元可取四种离散值，则一个码元携带2比特信息。 总之一个码元携带的信息量n(bit)与码元的种类数N的关系为n=logN（以2为底）。请大家注意，奈奎斯特定理与我们更为熟悉的奈奎斯特采样定理的区别。采样定理是描述模拟/数字信号的转换 过程中，采样频率与信号最高频率之间的关系。</p>
 <p> 奈奎斯特定理仅描述了无噪声情况下信道带宽与波特率的关系，根据这一理论，只要增加每个码元的离散值数量，就可以增加信道中可以传输的信息量。然而无噪声的情况在现实中是不存在的。1948年香农定理的提出解决了有噪声情况下带宽与数据速率的关系问题，香农也因此被称为信息论和数字通信时代的奠基人。</p>
 <p>香农定理表明，在高斯白噪声条件下实现无差错传输的信道容量（通常等同于最大数据速率）C可由下面的公式计算。 </p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573291829918.png" alt="1573291829918"></p>
+<p><img src="/2019/11/09/MATLAB2/1573291829918.png" alt="1573291829918"></p>
 <p>式中，W为信道带宽，S为信号的平均功率，N为噪声的平均功率，S/N为信噪比。当噪声 为高斯白噪声时（功率谱密度为N0), N=WN0。这个公式与信号取的离散值无关，也就是说 无论用什么方式调制，只要给定了信噪比，则单位时间内最大的信息传输量就确定了。例如，信道带宽为3 000 Hz，信噪比为30 dB，则最大数据速率C≈30 000 bps。这是极限值, 只有理论上的意义。实际上在3 000 Hz带宽的电话线上数据速率能达到9 600 bps就很不错了。</p>
 <p>从专业的角度去描述，带宽的意思是指波长、频率或能量带的范围，特指频带的上、 下边界频率之差。这里可以打个比喻，带就像高速公路的路面宽度和允许的最大车速，而数据流则相当于公路上的车流。当车的数量很少时，路面宽一些和窄一些，对车速都没有任何影响；随着车流的逐渐增大，直至某个临界点，路面宽度对车流量的影响才一 下子凸显出来，路面窄的话，就不能让更多的车辆在同一时间内通过，甚至造成大塞车。 当然，我们也可以提高允许的最大车速，这样也能使得在单位时间内通过更多的车。也就 是说带宽是用来描述频带宽度的，但是在数字传输方面，也常用带宽来衡量传输数据的能力。例如，用它来表示单位时间内传输数据容量的大小、数据吞吐的能力，而数据传输能力与信道带宽的关系又可以通过香农定理联系起来。</p>
 <h4 id="噪声与信噪比"><a href="#噪声与信噪比" class="headerlink" title="噪声与信噪比"></a>噪声与信噪比</h4><p><strong>1.白噪声与高斯白噪声</strong></p>
@@ -182,7 +183,7 @@
 <p>这里还需要再说明一下高斯白噪声对通信解调影响的直观理解。我们知道，数字通信中信噪比的大小直接会影响到解调端检测的错误概率。对于某个具体的通信体制及解调方 法，信噪比与误码率理论上有固定的换算关系。对于二进制调制方式来讲，检测端只需判 断出两种波形的区别即可正确解调出数据。例如，解调后的数据波形类似于正弦波形，这时，一定功率的噪声信号叠加上去，只要噪声的幅度大小不至于影响到信号波形的判决（判断时刻一般选在波峰或波谷处），也就是噪声的大小不会使波峰的值或波谷的值接近零值， 就不会出现误码检测的问题。我们用MATLAB仿真时，一般信噪比，如10dB,会感觉到 噪声的幅度好像根本不会出现很大值，也就是说根本不会影响到波形的判决。事实上是这 样吗？回想一下高斯分布的特征，虽然信号的大部分幅值都分布在零值附近，叠加到信号 上不会产生大的影响，但理论上每个噪声的幅度都可能是无限大的，只是大幅度的噪声值 出现的概率较小而已，当仿真的数据长度不够时，可能无法出现大幅度值的噪声值，当仿真数据长度足够时，大幅度值的噪声值将按照高斯分布的概率出现。这些大幅度值的噪声值叠加到信号上，就会引起检测的错误，产生一定的误码率。</p>
 <p><strong>2.SNR与Eb/N0</strong></p>
 <p>在模拟通信系统中，衡量信号质量的一个最重要的指标是信噪比（或称为SNR),指的是信号平均功率和噪声平均功率的比值，通常用dB单位表示。在数字通信中也有信噪比的概念，但与模拟通信不同，通常用信噪比的归一化形式(Eb/N0)作为性能指标。Eb为每比特信号的能量，等于信号功率S与每比特持续时间T的乘积 ; N0是噪声功率谱密度，等于噪声功率N与信道带宽W之比 ; 由于每比特持续时间T与比特速率R互为倒数，因此有下列表达式成立 </p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573293152736.png" alt="1573293152736"></p>
+<p><img src="/2019/11/09/MATLAB2/1573293152736.png" alt="1573293152736"></p>
 <p>显然，只有当信道带宽W与比特速率R相等时，数字通信中的信噪比概念Eb/N0才与 S/N相同。作为数字通信系统性能的一个重要指标，可以将系统所需的Eb/N0作为比较两个通信系统性能优劣的量度。在给定的差错概率条件下，所需的Eb/N0越小，则系统性能越好。   </p>
 <p>为什么数字通信要用Eb/N0作为衡量信号质量的指标，而不用呢S/N？接下来我们就这 个问题进行解释。</p>
 <p>根据前面的讨论，功率信号定义为平均功率有限而能量无穷大的信号，而将能量信号定义为平均功率等于零而能量有限的信号。这样的分类在对模拟信号和数字信号进行比较时是非常有用的。我们将模拟信号归类为功率信号。这有什么意义呢？通常模拟波形的持续时间为无限长，不需要做分割或加时间窗。 简单说来，加时间窗会引起时域信号在频域的扩展，为减少这种频谱扩展，需要加减小扩展性能的时间窗，如汉明窗等）。对时域无限的电信号波形而言，其能量无穷大，因此不能用能量来描述该信号，而功率则是一个更有用的参数。</p>
@@ -199,24 +200,24 @@
 <p>–一方面依赖于对输入随机变量或随机过程的采样方 法，比如上例中如果产生的随机数不是(0,1)区间上 的均匀分布，那么估计将是有偏的；</p>
 <p> –另一方面依赖于随机试验次数，只有随机试验次数 足够多，才能够获得较准确的结果。 </p>
 <h4 id="一个简单的通信仿真实例"><a href="#一个简单的通信仿真实例" class="headerlink" title="一个简单的通信仿真实例"></a>一个简单的通信仿真实例</h4><p>二进制反极性基带通信系统的蒙特卡洛仿真<br>我们用反极性信号波形和来发送二进制信息0和1，s(t)是能量为的任意波形，通过AWGN（高斯白噪声）信道之后接收信号波形可以表示为</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307688214.png" alt="1573307688214"></p>
+<p><img src="/2019/11/09/MATLAB2/1573307688214.png" alt="1573307688214"></p>
 <p>这里n(t)是高斯白噪声，其功率谱密度为</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307780877.png" alt="1573307780877"></p>
+<p><img src="/2019/11/09/MATLAB2/1573307780877.png" alt="1573307780877"></p>
 <p>用最佳接收机接收到的信号为</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307816072.png" alt="1573307816072"></p>
+<p><img src="/2019/11/09/MATLAB2/1573307816072.png" alt="1573307816072"></p>
 <p>此处</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307854985.png" alt="1573307854985"></p>
+<p><img src="/2019/11/09/MATLAB2/1573307854985.png" alt="1573307854985"></p>
 <p>n的数学期望与方差</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307889116.png" alt="1573307889116"></p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307918352.png" alt="1573307918352"></p>
+<p><img src="/2019/11/09/MATLAB2/1573307889116.png" alt="1573307889116"></p>
+<p><img src="/2019/11/09/MATLAB2/1573307918352.png" alt="1573307918352"></p>
 <p>系统误码率可用下式计算（推导详见《通信原理》）</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307962488.png" alt="1573307962488"></p>
+<p><img src="/2019/11/09/MATLAB2/1573307962488.png" alt="1573307962488"></p>
 <p> 下面我们用蒙特卡洛仿真方法来估计该系统的误码率。<br>首先，建立仿真模型。由于假设接收机为理想的最佳接收机，因此没必要模拟整个信号的传输过程，而只关心最佳接收机输出端的信号组成。</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573287167758.png" alt="1573287167758"></p>
+<p><img src="/2019/11/09/MATLAB2/1573287167758.png" alt="1573287167758"></p>
 <p>该模型中包括对两个随机过程的采样，一个是模拟二进制信源的贝努里分布，另一个是模拟最佳接收机输出端所包含高斯噪声。<br>由于假设信源和信道均无记忆，且信源和信道相互独立，因此我们对这两个随机过程进行采样，只需要产生一系列相互独立、满足概率分布的随机变量即可。我们所关心的事件是判决结果与实际传送比特相反，建立的估计量使用错误事件的出现相对频率近似系统的误码率，即</p>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573308066999.png" alt="1573308066999"></p>
+<p><img src="/2019/11/09/MATLAB2/1573308066999.png" alt="1573308066999"></p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment">%Monte Carlo Simulation to estimate bit error rate</span></div><div class="line">performance of a binary</div><div class="line"><span class="comment">%antipodal communication system</span></div><div class="line">clc</div><div class="line">clear</div><div class="line">N = [<span class="number">100</span>, <span class="number">1000</span>, <span class="number">10000</span>, <span class="number">100000</span>,<span class="number">1000000</span>];</div><div class="line">EbN0_indB = <span class="number">-2</span>:<span class="number">2</span>:<span class="number">8</span>;<span class="comment">%</span></div><div class="line">Ebn0 = <span class="number">10.</span>^(EbN0_indB/<span class="number">10</span>);</div><div class="line">E=<span class="number">1</span>;</div><div class="line">times = <span class="number">50</span>;</div><div class="line">err_rate = <span class="built_in">zeros</span>(<span class="built_in">length</span>(Ebn0),<span class="built_in">length</span>(N),times);</div><div class="line"><span class="keyword">for</span> iiii=<span class="number">1</span>:<span class="built_in">length</span>(N)</div><div class="line">   <span class="keyword">for</span> iii=<span class="number">1</span>:<span class="built_in">length</span>(Ebn0)</div><div class="line">      sigma = E/sprt(<span class="number">2</span>*Ebn0(iii));</div><div class="line">      <span class="keyword">for</span> ii = <span class="number">1</span>:<span class="number">10</span></div><div class="line">        r = <span class="built_in">rand</span>(<span class="number">1</span>,N(iiii));</div><div class="line">        source = double(r&gt;=<span class="number">0.5</span>);</div><div class="line">        x=<span class="number">1</span><span class="number">-2</span>*source;</div><div class="line">        noise = <span class="built_in">randn</span>(<span class="number">1</span>,N(iiii))*sigma;</div><div class="line">        y=E*x+noise;</div><div class="line">        result = double(y&lt;=<span class="number">0</span>);</div><div class="line">        error_num = sum(result-source&gt;<span class="number">1.e-6</span>);</div><div class="line">        err_rate(iii,iiii,ii) = error_num/N(iiii);</div><div class="line">      <span class="keyword">end</span></div><div class="line">    <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
-<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573287768315.png" alt="1573287768315"></p>
+<p><img src="/2019/11/09/MATLAB2/1573287768315.png" alt="1573287768315"></p>
 <p>可以看出，在同一信噪比条件下，仿真量越大相对误差的偏差越小；如果固定仿真量，相对误差的方差则随着信噪比的提高而迅速增大。</p>
 <h3 id="通信系统仿真一般结构"><a href="#通信系统仿真一般结构" class="headerlink" title="通信系统仿真一般结构"></a>通信系统仿真一般结构</h3><p>matlab通信仿真的代码遵循模块化设计思想，属于不同模块的代码段与代码段间应隔开并附上代码段功能注释。</p>
 <p>一个<strong>完整的matlab通信仿真程序</strong>一般由以下模块构成</p>
