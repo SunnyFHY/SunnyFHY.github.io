@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="null">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="符涵月">
+  <meta name="description" content="南邮本科生">
+  
+  <title>SunnyFHY</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/source/favicon.ico">
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu" ><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav" >
+    <div class="nav-header"  style="background-image: url(/images/Coconutree_Moon.jpg);background-color:#26A69A">
+    <div class="header-box"><img src="/images/Spongebob.jpg" ondragstart="return false;"></div>
+    <p>SunnyFHY</p>
+    <div class="nav-link">
+        
+        
+        <a  href="https://github.com/SunnyFHY" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off"/>
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a  class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2019/11/">November 2019<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/02/">February 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2018/12/">December 2018<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2018/10/">October 2018<span class="archive-count">3</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a   class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/VivadoHLS/">VivadoHLS<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/四旋翼/">四旋翼<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/操作系统/">操作系统<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/树莓派/">树莓派<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/通信仿真/">通信仿真<span class="category-count">2</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+<li class="nav-list">
+    <a href="/about" target="_self">
+        <div class="nav-ico"><i class="material-icons">copyright</i> </div><p>关于</p>
+    </a>
+</li>
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-10.png)" >
+  <h2>MATLAB通信仿真（一）</h2>
+    
+  <p>作者:SunnyFHY &nbsp&nbsp 发布于:<time datetime="2019-11-09T06:34:35.000Z">
+          2019-11-09
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h1 id="MATLAB通信仿真（一）"><a href="#MATLAB通信仿真（一）" class="headerlink" title="MATLAB通信仿真（一）"></a>MATLAB通信仿真（一）</h1><p>​                            此系列资料为我的matlab通信仿真学习笔记以及通院科协授课用资料</p>
+<h2 id="MATLAB基础知识"><a href="#MATLAB基础知识" class="headerlink" title="MATLAB基础知识"></a>MATLAB基础知识</h2><h3 id="MATLAB概述"><a href="#MATLAB概述" class="headerlink" title="MATLAB概述"></a>MATLAB概述</h3><h4 id="MATLAB简介"><a href="#MATLAB简介" class="headerlink" title="MATLAB简介"></a>MATLAB简介</h4><p>​       MATLAB（matrix&amp;laboratory） 是美国MathWorks公司出品的商业数学软件，用于算法开发、数据可视化、数据分析以及数值计算的高级技术计算语言和交互式环境，主要包括MATLAB和Simulink两大部分。   </p>
+<p>​       它在数学类科技应用软件中在数值计算方面首屈一指。MATLAB可以进行矩阵运算、绘制函数和数据、实现算法、创建用户界面、连接其他编程语言的程序等，主要应用于工程计算、控制设计、信号处理与通信、图像处理、信号检测、金融建模设计与分析等领域。</p>
+<h4 id="MATLAB系统结构"><a href="#MATLAB系统结构" class="headerlink" title="MATLAB系统结构"></a>MATLAB系统结构</h4><p>　　<strong>开发环境</strong></p>
+<p>　　MATLAB开发环境是一套方便用户使用的MATLAB函数和文件工具集，其中许多工具是图形化用户接口。它是一个集成的 用户工作空间，允许用户输入输出数据，并提供了M文件的集成编译和调试环境，包括MATLAB桌面、命令窗口、M文件编辑调试器、MATLAB工作空间和在线帮助文档。</p>
+<p>　　<strong>数学函数</strong></p>
+<p>　　MATLAB数学函数库包括了大量的计算算法。从基本算法如四则运算、三角函数，到复杂算法如矩阵求逆、快速傅里叶变换等。</p>
+<p>　　<strong>语言</strong></p>
+<p>　　MATLAB语言是一种高级的基于矩阵/数组的语言，它有程序流控制、函数、数据结构、输入/输出和面向对象编程等特色。用这种语言能够方便快捷建立起简单运行快的程序，也能建立复杂的程序。</p>
+<p>　　<strong>图形处理</strong></p>
+<p>　　图形处理系统使得MATLAB能方便的图形化显示向量和矩阵，而且能对图形添加标注和打印。它包括强大的二维三维图形函数、图像处理和动画显示等函数。</p>
+<p>　　<strong>程序接口</strong></p>
+<p>　　MATLAB应用程序接口（API）是一个使MATLAB语言能与C、Fortran等其它高级编程语言进行交互的函数库。该函数库的函数通过调用动态链接库（DLL）实现与MATLAB文件的数据交换，其主要功能包括在MATLAB中调用C和Fortran程序，以及在MATLAB与其它应用程序间建立客户、服务器关系。</p>
+<h4 id="MATLAB界面介绍"><a href="#MATLAB界面介绍" class="headerlink" title="MATLAB界面介绍"></a>MATLAB界面介绍</h4><p>打开MATLAB可见如下<strong>主界面</strong></p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573254849370.png" alt="1573254849370"></p>
+<p>主界面分为五个区域：工具栏、文件路径，当前文件夹，命令行窗口以及工作变量区域</p>
+<p><strong>工具栏</strong> </p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573255424804.png" alt="1573255424804"></p>
+<p>工具栏区域包括文件、变量、代码、simulink、坏境设置和资源六大部分 </p>
+<p><strong>文件路径</strong></p>
+<p>文件路径是当前文件夹的地址，在该区域可以实现文件路径的切换 </p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573255646816.png" alt="1573255646816"></p>
+<p><strong>当前文件夹</strong></p>
+<p>当前文件夹是显示当前文件路径下所有文件的窗口，可以在此双击打开所需要的不同格式文件</p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573255901880.png" alt="1573255901880"></p>
+<p><strong>命令行窗口</strong></p>
+<p>命令窗口是进行一系列命令输入的地方，当有指令输入并按下Enter键时，软件会自动执行该条指令，并显示出该命令的结果 </p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573256069978.png" alt="1573256069978"></p>
+<p><strong>工作变量区</strong></p>
+<p>工作变量区域是存放所执行程序中涉及到的所有变量值的空间，可以在该区域双击某变量查看其具体的变量表示情况  </p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573256148715.png" alt="1573256148715"></p>
+<h4 id="MATLAB的变量、运算符与表达式、常用命令"><a href="#MATLAB的变量、运算符与表达式、常用命令" class="headerlink" title="MATLAB的变量、运算符与表达式、常用命令"></a>MATLAB的变量、运算符与表达式、常用命令</h4><p><strong>MATLAB中的变量</strong></p>
+<p>MATLAB并不要求事先对所使用的变量进行声明，也不需要指定变量类型，MATLAB语言会自动依据所赋予变量的值或对变量所进行的操作来识别变量的类型。在赋值过程中如果赋值变量已存在时，MATLAB语言将使用新值代替旧值，并以新值类型代替旧值类型。</p>
+<p>在MATLAB语言中变量的<strong>命名应遵循如下规则</strong>：</p>
+<p>（1）变量名区分大小写，myvar和myVar表示两个不同的变量。</p>
+<p>（2）变量名长度不超63位，第31个字符之后的字符将被MATLAB语言所忽略。</p>
+<p>（3）变量名以字母开头，可以是字母、数字、下划线组成，但不能使用标点和空格。</p>
+<p>与其他的程序设计语言相同，在MATLAB语言中也存在变量作用域的问题。在未加特殊说明的情况下，MATLAB语言将所识别的一切变量视为局部变量，即仅在其使用的M文件内有效。若要将变量定义为全局变量，则应当对变量进行说明，即在该变量前加关键字global。一般来说全局变量均用大写的英文字符表示。</p>
+<p><strong>MATLAB 中的运算符与表达式</strong></p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573258784375.png" alt="1573258784375"></p>
+<p><strong>MATLAB中的常用命令</strong></p>
+<ul>
+<li><code>clc</code> 清空命令窗口</li>
+<li><code>clear</code> 清空工作区数据</li>
+<li>clf  清除当前图形窗口内容</li>
+<li>close all  关闭所有打开的图形窗口</li>
+<li>who/whos  显示MATLAB工作空间中的变量/变量及信息</li>
+<li>type&lt;文件名.m&gt;  显示指定m文件内容</li>
+<li>help&lt;命令名&gt;  查询所列命令的帮助信息 </li>
+<li><code>exit/quit</code> 关闭软件</li>
+</ul>
+<h3 id="MATLAB-M文件知识"><a href="#MATLAB-M文件知识" class="headerlink" title="MATLAB  M文件知识"></a>MATLAB  M文件知识</h3><p><strong>脚本式m文件</strong><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573261008198.png" alt="1573261008198"></p>
+<p>脚本就是自动执行逐条命令的文件。如果编写了一个脚本式M文件，点击run就会自动一条一条命令顺序执行。和在命令窗写一条命令、执行一次的效果相同，过程中的变量都会被保存。 </p>
+<p><strong>函数式m文件</strong><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573261054626.png" alt="1573261054626"></p>
+<p>函数式m文件封装好特定功能的函数以供调用。此类m文件开头一般为如下格式，用以表明该m文件为函数式m文件。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="params">[输出参数形式]</span> = 函数名 （函数形参表）</span></div><div class="line"></div><div class="line"><span class="comment">%注释说明语句段</span></div><div class="line"></div><div class="line"><span class="comment">%程序语句段</span></div></pre></td></tr></table></figure>
+<p><strong>新建m文件的方法</strong></p>
+<p>1.直接在命令行窗口输入edit</p>
+<p>即可新建一个Untitled  m文件并直接编写</p>
+<p>2.点击工具栏中的New Script新建脚本，或者点击New 选择New Script或者New Function</p>
+<h3 id="MATLAB绘图知识"><a href="#MATLAB绘图知识" class="headerlink" title="MATLAB绘图知识"></a>MATLAB绘图知识</h3><h4 id="二维图形绘制"><a href="#二维图形绘制" class="headerlink" title="二维图形绘制"></a>二维图形绘制</h4><p><strong>常用基本函数</strong></p>
+<p><code>plot()</code></p>
+<p><code>(1)plot(x,y)</code>(其中，x和y分别用于存储x坐标和y坐标数据。通常，x和y为长度相同的向量。）</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">例<span class="number">1</span>  绘制一条折线。</div><div class="line">    x=[<span class="number">2.5</span>, <span class="number">3.5</span>, <span class="number">4</span>, <span class="number">5</span>];</div><div class="line">    y=[<span class="number">1.5</span>, <span class="number">2.0</span>, <span class="number">1</span>, <span class="number">1.5</span>];</div><div class="line">    plot(x, y)</div></pre></td></tr></table></figure>
+<p>(2)最简单的plot函数调用格式<br><code>plot(x)</code> 当plot函数的参数x是复数向量时，则分别以该向量实部和虚部为横、纵坐标绘制出一条曲线。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">x=[<span class="number">2.5</span>,<span class="number">3.5</span>,<span class="number">4</span>,<span class="number">5</span>];</div><div class="line">y=[<span class="number">1.5</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">1.5</span>];</div><div class="line">cx=x+y*<span class="built_in">i</span>;     <span class="comment">%也可写为cx=complex(x,y);</span></div><div class="line">plot(cx)</div></pre></td></tr></table></figure>
+<p>(3)plot(x,y)函数参数的变化形式</p>
+<ul>
+<li><p><strong>当x是向量，y是矩阵时</strong><br>1.如果矩阵y的列数等于x的长度，则以向量x为横坐标，以y的每个行向量为纵坐标绘制曲线，<strong>曲线的条数等于y的行数</strong>。<br>2.如果矩阵y的行数等于x的长度，则以向量x为横坐标，以y的每个列向量为纵坐标绘制曲线，<strong>曲线的条数等于y的列数</strong>。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">例<span class="number">2</span>  绘制<span class="built_in">sin</span>(x)、<span class="built_in">sin</span>(<span class="number">2</span>x)、<span class="built_in">sin</span>(x/<span class="number">2</span>)的函数曲线。</div><div class="line"> x=<span class="built_in">linspace</span>(<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">pi</span>,<span class="number">100</span>);              <span class="comment">%创建一个0到2pi的含有100个元素的列向量</span></div><div class="line"> y=[sin(x); sin(<span class="number">2</span>*x); sin(<span class="number">0.5</span>*x)];    <span class="comment">%y为含有三个元素的行向量</span></div><div class="line"> plot(x,y)</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>当x,y为同型矩阵时</strong><br>以x、y对应列元素为横、纵坐标分别绘制曲线，曲线条数等于矩阵的列数。</p>
+</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">t=<span class="number">0</span>:<span class="number">0.01</span>:<span class="number">2</span>*<span class="built_in">pi</span>;     </div><div class="line">t1=t';                 <span class="comment">%创建创建一个0到2pi的含有100个元素的列向量（每个元素之间间隔为0.01）</span></div><div class="line">x=[t1, t1, t1];</div><div class="line">y=[sin(t1), sin(<span class="number">2</span>*t1), sin(<span class="number">0.5</span>*t1)];</div><div class="line">plot(x,y)</div></pre></td></tr></table></figure>
+<p>(4)含多个输入参数的plot函数</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">plot(x1,y1,x2,y2,...,xn,yn)</div></pre></td></tr></table></figure>
+<p>其中，每一向量对构成一组数据点的横、纵坐标，绘制一条曲线。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">例<span class="number">3</span>  采用不同个数的数据点绘制正弦函数曲线，观察曲线形态。</div><div class="line">t1=<span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">10</span>);</div><div class="line">t2=<span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">20</span>);</div><div class="line">t3=<span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>);</div><div class="line">plot(t1, <span class="built_in">sin</span>(t1), t2,<span class="built_in">sin</span>(t2)+<span class="number">1</span>, t3, <span class="built_in">sin</span>(t3)+<span class="number">2</span>)</div></pre></td></tr></table></figure>
+<p>（5）含选项的plot函数</p>
+<p>plot函数可以增加一个参数用于指定曲线的线型、颜色和数据点标记。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">plot(x,y,<span class="string">'s'</span>)</div><div class="line"></div><div class="line">例<span class="number">4</span></div><div class="line">plot(x1, y1, <span class="string">'k:'</span>, x2, y2, <span class="string">'b--'</span>, x3, y3, <span class="string">'rp'</span>)</div></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>线型</th>
+<th>—</th>
+<th>实线</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>：</td>
+<td>虚线</td>
+</tr>
+<tr>
+<td></td>
+<td>—.</td>
+<td>点划线</td>
+</tr>
+<tr>
+<td></td>
+<td><em> </em></td>
+<td>双划线</td>
+</tr>
+<tr>
+<td>颜色</td>
+<td>r</td>
+<td>红色</td>
+</tr>
+<tr>
+<td></td>
+<td>g</td>
+<td>绿色</td>
+</tr>
+<tr>
+<td></td>
+<td>b</td>
+<td>蓝色</td>
+</tr>
+<tr>
+<td></td>
+<td>w</td>
+<td>白色</td>
+</tr>
+<tr>
+<td></td>
+<td>k</td>
+<td>黑色</td>
+</tr>
+<tr>
+<td>数据点标记</td>
+<td>*</td>
+<td>星号</td>
+</tr>
+<tr>
+<td></td>
+<td>o</td>
+<td>圆圈</td>
+</tr>
+<tr>
+<td></td>
+<td>s</td>
+<td>方块</td>
+</tr>
+<tr>
+<td></td>
+<td>p</td>
+<td>五角星</td>
+</tr>
+<tr>
+<td></td>
+<td>^</td>
+<td>朝上三角符号</td>
+</tr>
+</tbody>
+</table>
+<p><strong>坐标轴调整</strong></p>
+<p>axis函数：    </p>
+<p><code>1.基本函数：</code>axis（[xmin,xmax,ymin,ymax,zmin,zmax]）` 用于控制坐标轴的选择范围       </p>
+<p> 2.常用指令： axis equal:纵横坐标轴采用等长的刻度         axis square：产生正方形坐标系（默认为矩形）          axis auto：使用默认设置           axis off：取消坐标轴             axis on：显示坐标轴               grid on/grid off/grid box on/box off/box ：给坐标系加网络、边框     hold on/hold off/hold ：图形保持</p>
+<p><strong>窗口分割</strong></p>
+<p><code>subplot(m,n,p)</code>,其中m和n指定将图形窗口分成m*n个绘图区，p指定当前活动区。 默认顺序从左到右，自上而下。</p>
+<p><strong>图形标识</strong></p>
+<p>在title（）、xlabel（）、ylabel（）、zlabel（）、text () 等函数中填入正确参数为绘制的图形添加标题、坐标轴标注 、文本标注。</p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573269906162.png" alt="1573269906162"></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">title(<span class="string">'图形标题'</span>,<span class="string">'属性名'</span>,<span class="string">'属性值'</span>)</div><div class="line">text(x,y,<span class="string">'说明'</span>)   xy为文本的坐标位置</div><div class="line">xlabel(<span class="string">'x轴说明'</span>)</div><div class="line">ylabel(<span class="string">'y轴说明'</span>)</div><div class="line">z轴同理</div><div class="line"></div><div class="line">例<span class="number">5</span></div><div class="line">title(<span class="string">'y=cos&#123;\omega&#125;t'</span>,<span class="string">'FontSize'</span>,<span class="string">'24'</span>)</div><div class="line">text(<span class="number">3</span>, <span class="number">0.28</span>, <span class="string">'\leftarrow sin(x)'</span>)</div></pre></td></tr></table></figure>
+<p><strong>坐标系选取</strong></p>
+<p><code>极坐标系</code></p>
+<p>polar(theta, rho, ‘选项’)     </p>
+<p>其中，theta为极角，rho为极径，选项的内容与plot函数相同。 </p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">例<span class="number">6</span> 按极坐标方程ρ=<span class="number">1</span>-<span class="built_in">sin</span> t绘制心形曲线。</div><div class="line">t = <span class="number">0</span>:<span class="built_in">pi</span>/<span class="number">100</span>:<span class="number">2</span>*<span class="built_in">pi</span>;</div><div class="line">r = <span class="number">1</span>-<span class="built_in">sin</span>(t);</div><div class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>)</div><div class="line">polar(t,r)</div><div class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>)</div><div class="line">t1 = t-<span class="built_in">pi</span>/<span class="number">2</span>;</div><div class="line">r1 = <span class="number">1</span>-<span class="built_in">sin</span>(t1);</div><div class="line">polar(t,r1)</div></pre></td></tr></table></figure>
+<p><code>对数坐标</code></p>
+<p>通信仿真中常用于绘制误码率曲线</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">semilogx(x1, y1, <span class="string">'选项1'</span>, x2, y2, <span class="string">'选项2'</span>, …) </div><div class="line"></div><div class="line">semilogy(x1, y1, <span class="string">'选项1'</span>, x2, y2, <span class="string">'选项2'</span>, …) </div><div class="line"></div><div class="line">loglog(x1, y1, <span class="string">'选项1'</span>, x2, y2,<span class="string">'选项2'</span>, …) </div><div class="line"></div><div class="line">plotyy(x1,y1,<span class="string">'选项'</span>)双y轴坐标绘图</div><div class="line"></div><div class="line">例<span class="number">7</span> </div><div class="line">semilogy(ebno,th161_01_bit_err_ratio,<span class="string">'-*'</span>,ebno,th161_05_bit_err_ratio,<span class="string">'r-o'</span>,ebno,th161_075_bit_err_ratio,<span class="string">'k-&gt;'</span>);</div><div class="line">xlabel(<span class="string">'比特信噪比'</span>);</div><div class="line">ylabel(<span class="string">'误码率 '</span>);</div></pre></td></tr></table></figure>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573276068497.png" alt="1573276068497"></p>
+<h3 id="MATLAB流程控制"><a href="#MATLAB流程控制" class="headerlink" title="MATLAB流程控制"></a>MATLAB流程控制</h3><p>if switch for while语句结构和C语言基本一致</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>  表达式<span class="number">1</span></div><div class="line"></div><div class="line">执行语句<span class="number">1</span></div><div class="line"></div><div class="line"><span class="keyword">elseif</span> 表达式<span class="number">2</span></div><div class="line"></div><div class="line">执行语句<span class="number">2</span></div><div class="line"></div><div class="line"><span class="keyword">else</span></div><div class="line"></div><div class="line">    语句n</div><div class="line"></div><div class="line"><span class="keyword">end</span>    </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">switch</span>   表达式</div><div class="line"></div><div class="line">   <span class="keyword">case</span>  常量表达式<span class="number">1</span></div><div class="line"></div><div class="line">         语句块<span class="number">1</span></div><div class="line"></div><div class="line">   <span class="keyword">case</span>   常量表达式<span class="number">2</span></div><div class="line"></div><div class="line">         语句块<span class="number">2</span></div><div class="line"></div><div class="line">   <span class="keyword">case</span>   &#123;常量表达式n，常量表达式n+<span class="number">1</span>，…&#125;</div><div class="line"></div><div class="line">         语句块n</div><div class="line"></div><div class="line"><span class="keyword">otherwise</span></div><div class="line"></div><div class="line">语句块n+<span class="number">1</span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">while</span> 表达式</div><div class="line"></div><div class="line">循环体语句</div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">for</span> <span class="built_in">i</span>=表达式</div><div class="line"></div><div class="line">循环体语句</div><div class="line"></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>另外还有一种流控结构：试探结构</p>
+<p>这种结构可自查错误并提前做好预备方案</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span></div><div class="line">   尝试执行的语句块</div><div class="line"><span class="keyword">catch</span> 用于存储错误的变量</div><div class="line">   出错后执行语句块</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>用例详见matlab帮助文档中的try-catch页面</p>
+<p><a href="https://ww2.mathworks.cn/help/matlab/ref/try.html" target="_blank" rel="external">https://ww2.mathworks.cn/help/matlab/ref/try.html</a></p>
+<h3 id="MATLAB文件操作"><a href="#MATLAB文件操作" class="headerlink" title="MATLAB文件操作"></a>MATLAB文件操作</h3><p>matlab可对音频文件进行采样、也可对图像、视频文件进行处理，可以在这些文件基础上运用数字信号处理的知识以及进行算法研究。</p>
+<p>以下给出基础文件操作函数，需要用时使用help&lt;函数名&gt;查询matlab帮助文档。</p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281160936.png" alt="1573281160936"></p>
+<p><strong>此处新版本可用audioread()函数读取多种格式的音频文件</strong></p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281242703.png" alt="1573281242703"></p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281110649.png" alt="1573281110649"></p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281091952.png" alt="1573281091952"></p>
+<p><img src="/2019/11/09/MATLAB1/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB1\1573281068402.png" alt="1573281068402"></p>
+
+  </div>
+  <!--评论块-->
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+  <a href="/2019/11/09/MATLAB2/" id="post_nav-newer" class="post-nav-content prev-content">
+      新篇
+  </a>
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2019/02/26/rasp/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MATLAB通信仿真（一）"><span class="post-toc-number">1.</span> <span class="post-toc-text">MATLAB通信仿真（一）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#MATLAB基础知识"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">MATLAB基础知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MATLAB概述"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">MATLAB概述</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#MATLAB简介"><span class="post-toc-number">1.1.1.1.</span> <span class="post-toc-text">MATLAB简介</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#MATLAB系统结构"><span class="post-toc-number">1.1.1.2.</span> <span class="post-toc-text">MATLAB系统结构</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#MATLAB界面介绍"><span class="post-toc-number">1.1.1.3.</span> <span class="post-toc-text">MATLAB界面介绍</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#MATLAB的变量、运算符与表达式、常用命令"><span class="post-toc-number">1.1.1.4.</span> <span class="post-toc-text">MATLAB的变量、运算符与表达式、常用命令</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MATLAB-M文件知识"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">MATLAB  M文件知识</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MATLAB绘图知识"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">MATLAB绘图知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#二维图形绘制"><span class="post-toc-number">1.1.3.1.</span> <span class="post-toc-text">二维图形绘制</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MATLAB流程控制"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">MATLAB流程控制</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MATLAB文件操作"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">MATLAB文件操作</span></a></li></ol></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p >Copyright ©  2017  SunnyFHY</p>
+<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+<p style="font-size: 10px" id="footer-times" data-time="10/01/2018 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>

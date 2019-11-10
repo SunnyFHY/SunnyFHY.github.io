@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="null">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="符涵月">
+  <meta name="description" content="南邮本科生">
+  
+  <title>SunnyFHY</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/source/favicon.ico">
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu" ><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav" >
+    <div class="nav-header"  style="background-image: url(/images/Coconutree_Moon.jpg);background-color:#26A69A">
+    <div class="header-box"><img src="/images/Spongebob.jpg" ondragstart="return false;"></div>
+    <p>SunnyFHY</p>
+    <div class="nav-link">
+        
+        
+        <a  href="https://github.com/SunnyFHY" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off"/>
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a  class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2019/11/">November 2019<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/02/">February 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2018/12/">December 2018<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2018/10/">October 2018<span class="archive-count">3</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a   class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/VivadoHLS/">VivadoHLS<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/四旋翼/">四旋翼<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/操作系统/">操作系统<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/树莓派/">树莓派<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/通信仿真/">通信仿真<span class="category-count">2</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+<li class="nav-list">
+    <a href="/about" target="_self">
+        <div class="nav-ico"><i class="material-icons">copyright</i> </div><p>关于</p>
+    </a>
+</li>
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-10.png)" >
+  <h2>MATLAB通信仿真（二）</h2>
+    
+  <p>作者:SunnyFHY &nbsp&nbsp 发布于:<time datetime="2019-11-09T10:02:44.000Z">
+          2019-11-09
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h1 id="MATLAB通信仿真（二）"><a href="#MATLAB通信仿真（二）" class="headerlink" title="MATLAB通信仿真（二）"></a>MATLAB通信仿真（二）</h1><p>​                            此系列资料为我的matlab通信仿真学习笔记以及通院科协授课用资料</p>
+<h2 id="通信仿真基础知识"><a href="#通信仿真基础知识" class="headerlink" title="通信仿真基础知识"></a>通信仿真基础知识</h2><h3 id="数字通信系统基础概念"><a href="#数字通信系统基础概念" class="headerlink" title="数字通信系统基础概念"></a>数字通信系统基础概念</h3><h4 id="与频谱相关的概念"><a href="#与频谱相关的概念" class="headerlink" title="与频谱相关的概念"></a>与频谱相关的概念</h4><p> 在数字通信系统中，我们会经常提到频谱的概念，频域分析也是信号分析最基本和最 广泛使用的方法，通信人员最直接的体验就是用频谱分析仪分析测试信号的频谱。与频谱 相关的概念有很多，如幅度谱、相位谱、功率谱和能量谱等，常常让人很糊涂，搞不清其中的关系。在信号分析中经常会出现负频率成分，这又到底是怎么回事呢？现实中会存在 具有负频率成分的信号吗？ </p>
+<p><strong>1.傅里叶变换</strong></p>
+<p>我们知道，傅里叶级数其实是用不同频率的正弦信号来表示各种信号（或曲线）。为什 么我们要用正弦曲线来代替原来的曲线呢？比如我们也还可以用方波或三角波来代替呀。 分解信号的方法是无穷多的，但分解信号的目的是为了更加简单地处理原来的信号。用正余弦来表示原信号会更加简单，因为正余弦拥有原信号所不具有的性质：正弦曲线保真度。 一个正余弦曲线信号输入后，输出仍然是正余弦曲线，只有幅度和相位可能发生变化，但是频率和波的形状仍是一样的。由于只有正余弦曲线才拥有这样的性质，我们才不用方波或三角波来表示。 </p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573289232933.png" alt="1573289232933"></p>
+<p>关于傅里叶变换的原理在此不再多做讨论，在任何一本讨论信号与系统的书籍中均可以找到其详细的理论推导。这里，我们起码需要确立关于信号处理中的一个基本概念 如果信号在频域是离散的，则该信号在时域就表现为周期性的时间函数；相反，在时域上 是离散的，则该信号在频域必然表现为周期性的频率函数。不难设想，如果时域信号不仅是离散的，而且是周期的，那么由于它时域离散，其频谱必是周期的，又由于时域是周期的，相应的频谱必是离散的。换句话说，一个离散周期时间序列，它一定具有既是周期又是离散的频谱。我们还可以得出一个结论：一个域的离散就必然造成另一个域的周期延拓， 这种离散变换，本质上都是周期的。</p>
+<p><strong>2.功率谱与能量谱</strong></p>
+<p>对一个时域信号进行傅里叶变换，就可以得到信号的频谱，信号的频谱由两部分构成: 幅度谱和相位谱。那么，什么是功率谱呢？什么又是能量谱呢？功率谱、能量谱与信号的频谱有什么关系呢？</p>
+<p>要区分功率谱和能量谱，首先要清楚两种不同类型的信号：功率有限信号和能量有限信号。</p>
+<p>信号的归一化能量（简称信号的能量）定义为信号电压或电流f(t)加到1Ω电阻上所消耗的能量，表示为</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573289434777.png" alt="1573289434777"></p>
+<p>通常把能量为有限值的称为能量有限信号或简称能量信号。在实际应用中，一般的非周期信号属于能量信号。然而，对于像周期信号、阶跃信号，以及符号函数等这一类的信号，显然其能量积分无穷大，此时，一般不再研究其能量，而是研究信号的平均功率。 </p>
+<p>信号的平均功率（简称信号的功率）是指信号电压或电流在1Ω电阻上所消耗的功率， 表示为 </p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573289646702.png" alt="1573289646702"></p>
+<p>f(t)在一个时间段[T1,T2]上的平均功率为 </p>
+<p>​                                      <img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573289788553.png" alt="1573289788553"></p>
+<p>如果信号的功率是有限的，那么称为功率有限信号，简称功率信号。系统中的波形要么具有能量值，要么具有功率值，因为能量有限的信号功率为零，而功率有限的信号能量为无穷大。一般来说，周期信号和随机信号是功率信号，而非周期的确定信号是能量信号。将信号区分为能量信号和功率信号可以简化对各种信号和噪声的数学分析。还有一类信号 的功率和能量都是无限的，如f(t)=t这类信号很少会用到。 </p>
+<p>了解信号可能是能量信号，也可能是功率信号后，就可以很好地理解功率谱和能量谱的概念。对于能量信号，常用能量谱来描述。所谓的能量谱，也称为能量谱密度，是指用密度的概念表示信号能量在各频率点的分布情况。也就是说，对能量谱在频域上积分就可 以得到信号的能量。能量谱是信号幅度谱的模的平方，其量纲是焦/赫。对于功率信号，常 用功率谱来描述。所谓的功率谱，也称为功率谱密度，是指用密度的概念表示信号功率在 各频率点的分布情况。对功率谱在频域上积分就可以得到信号的功率。从理论上来说，功率谱是信号自相关函数的傅里叶变换。因为功率信号不满足傅里叶变换条件，其频谱通常不存在，维纳-辛钦定理证明了自相关函数和傅里叶变换之间的对应关系。在工程应用中， 即便是功率信号，由于持续的时间有限，可以直接对信号进行傅里叶变换，然后对得到的幅度谱的模求平方，再除以持续时间来估计信号的功率谱。 </p>
+<p>对于确定性的信号，特别是非周期的确定性信号，常用能量谱来描述。而对于随机信号，由于持续时间无限长，不满足绝对可积与能量可积的条件，因此不存在傅里叶变换， 所以通常用功率谱来描述。周期性的信号，也同样不满足傅里叶变换的条件，常用功率谱 来描述，这些在前面己经有所说明。只有如单频正弦信号等很少的特殊信号，在引入冲激函数之后，才可以求解信号的傅里叶变换。 </p>
+<p>对于用功率谱描述的随机信号而言，白噪声是一个特例。根据定义，白噪声是指功率谱密度在整个频域内均匀分布的噪声。严格地说，白噪声只是一种理想化模型，因为实际 噪声的功率谱密度不可能具有无限宽的带宽，否则它的功率将是无限大，是物理上不可实现的。然而，白噪声在数学处理上比较方便，因此它是系统分析的有力工具。一般来讲， 只要一个噪声过程所具有的频谱宽度远远大于它所作用系统的带宽，并且在该带宽中其频 谱密度基本上可以作为常数来考虑，就可以把它作为白噪声来处理。例如，热噪声和散弹噪声在很宽的频率范围内具有均匀的功率谱密度，通常可以认为它们是白噪声。 </p>
+<p>再回过头来讨论一下频谱仪上所测试到的信号。经过前面的分析，显然频谱仪观测到的信号均是功率信号，且所观测到的频谱其实只是幅度谱，并没有相位与频率的关系。 而采用MATLAB很容易设计出满足需求的滤波器，并绘出滤 波器的幅频响应和相频响应。 </p>
+<p>虽然在数学分析上，根据傅里叶变换公式会产生负频率成分的信号，以及出现虚信号, 但现实中显然是不会出现这样的信号的。因此，这些信号仅仅是方便进行数学分析而已。 例如，根据傅里叶变换公式，任何实信号的频谱均是相对于纵坐标对称的，采用本地载波 信号进行混频时，很容易根据傅里叶变换的性质推导出混频后的所有频率分量。 </p>
+<h4 id="带宽是如何定义的"><a href="#带宽是如何定义的" class="headerlink" title="带宽是如何定义的"></a>带宽是如何定义的</h4><p>信号带宽、滤波器带宽、3 dB带宽、半功率带宽、信道带宽，这些概念的准确定义是什么？它们是一回事吗，或者之间有什么关联？ </p>
+<p><strong>1.信号带宽 </strong></p>
+<p>对于一个经载波调制的脉冲信号：Xc(t)  来讲，其频率范围覆盖了整个频域，单边带功率谱密度具有如下的表达形式</p>
+<p>​                                          <img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573290623222.png" alt="1573290623222"></p>
+<p>式中，fc是载波频率，T为脉冲持续时间。Xc(t)的功率谱密度如图示，大多数数字调制方式产生的信号频谱形状大致如此。 </p>
+<p> <img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307475798.png" alt="1573307475798"></p>
+<p>(a)半功率带宽；（b)等效噪声带宽；（c)零点到零点带宽；（d)99%功率带宽；（e)限制带外衰减35dB带宽 </p>
+<p>以下是图中几种信号带宽的定义。</p>
+<p>(1)  半功率带宽（Half-Power Bandwidth):指Gx(f)的功率下降到峰值的一半，或此峰值下降3 dB的两频率点之间的间隔。因此，半功率带宽也叫作3 dB带宽。</p>
+<p>(2) 等效矩形或等效噪声带宽（Equivalent Rectangular or Noise Equivalent Bandwidth):</p>
+<p>等效带宽概念的出现，最初是为了从具有宽带噪声输入的放大器中快速计算输出噪声功率， 这个概念也可以推广到信号带宽。信号的等效带宽Bn=Px/Gx(fc),其中Px是所有频率上的信号总功率，Gx(fc)是Gx(f)在带宽中心点的值（假设该值是最大值）。</p>
+<p>(3) 零点到零点带宽（Null-to-Null Bandwidth):这个带宽也叫作主瓣宽度，是数字通信中最常用的带宽定义。在没有特别指明的情况下，通常所说的信号带宽就是指主瓣宽度, 在这个频带包含了信号的大部分信号功率。</p>
+<p>(4) 部分功率保留带宽（Fractional Power Containment Bandwidth):这个带宽定义己被联邦通信委员会（FCC)采纳，此带宽定义要求在正截止频率以上和负截止频率以下各留0. 5%的信号功率，因此该带宽内包含了 99%的信号功率。</p>
+<p>(5)有界功率谱密度带宽（Bounded Power Spectral Density Bandwidth):该定义指在确定带宽之外的任意频率处，Gx(f)必须比带宽中心点的值低一个确定数，典型的衰减电平值 为 35dB 或 50dB。</p>
+<p>(6)绝对带宽（Absolute Bandwidth):指在该带宽之外的频谱全部为零的频率间隔。该定义在理论上很有用，但对于可实现的信号，绝对带宽为无穷大。</p>
+<p>经过前面的讨论，我们对信号带宽、3 dB带宽、半功率带宽的概念有了更为明确的认识。众所周知，滤波器是一个频率选择性器件，它的带宽是指能够通过滤波器的频率范围。 半功率带宽，是指与最大功率增益相比，功率衰减量下降一半(3 dB)处的频率带宽。滤波器的另外一个重要带宽概念对应于信号带宽中的有界功率谱密度带宽，也叫作通带带宽， 指功率衰减下降了某个典型值（35 dB或50 dB)处的频率带宽，此时的频率值通常也叫作 截止频率或阻带频率。 </p>
+<p><strong>2.信道带宽</strong></p>
+<p>接下来再讨论一下通信中经常碰到的信道带宽的概念。从电子电路角度的出发，带宽 本意指的是电子电路中存在一个固有通频带。这个概念或许比较抽象，我们有必要做进一 步的解释。大家都知道，各类复杂的电子电路无一例外都存在电感、电容或相当功能的储 能元件，即使没有采用现成的电感线圈或电容，导线自身就是一个电感，而导线与导线之 间、导线与地之间便可以组成电容——这就是通常所说的杂散电容或分布电容。不管是哪种 类型的电容、电感，都会对信号起着阻滞作用，从而消耗信号能量，严重的话会影响信号 品质。这种效应与交流电信号的频率成正比关系，当频率髙到一定程度、令信号难以保持 稳定时，整个电子电路自然就无法正常工作。为此，电子学上就提出了带宽的概念，它指 的是电路可以保持稳定工作的频率范围。而这里所说的带宽，可以更确切地理解为模拟信 道的带宽。模拟信道可以理解为某个具体的电路，组成信道的电路制成了，信道的带宽就 决定了，为了使信号的传输失真小些，信道就需要有足够的带宽。</p>
+<p>有了模拟信道带宽，自然就有与之对应的数字信道带宽的概念，这个概念也更接近于本书所要讨论的数字通信范畴。数字通信中离我们最近的概念是无线通信，无线通信的信道其实就是空间。显然，我们生活的周围不仅充满了无处不在的空气，同时也充满了无处 不在的电磁波，为了不至于使通信发生干扰，各个应用领域都有自己所能使用的频率范围， 这个频率范围就是信道的带宽。数字信道的带宽决定了信道能不失真地传输脉冲序列的最高速率。</p>
+<p>既然信道带宽决定了传输脉冲序列的最高速率，因此两者之间必然存在一定的关系。 实际上这个关系可以用数学公式表达出来，更确切地讲，这个关系可以用两个定理来描述: 奈奎斯特（Nyquist)定理和香农（Shannon)定理。</p>
+<p>早在1924年，贝尔实验室的研究员亨利•奈奎斯特就推导出了有限带宽无噪声信道的极限波特率，称为奈奎斯特定理。奈奎斯特定理指出，若信道带宽为W,则最大码元速率(Baud)。数据速率和波特率是两个不同的概念。若码元取两个离散值， 则一个码元携带1比特（bit)信息。若码元可取四种离散值，则一个码元携带2比特信息。 总之一个码元携带的信息量n(bit)与码元的种类数N的关系为n=logN（以2为底）。请大家注意，奈奎斯特定理与我们更为熟悉的奈奎斯特采样定理的区别。采样定理是描述模拟/数字信号的转换 过程中，采样频率与信号最高频率之间的关系。</p>
+<p> 奈奎斯特定理仅描述了无噪声情况下信道带宽与波特率的关系，根据这一理论，只要增加每个码元的离散值数量，就可以增加信道中可以传输的信息量。然而无噪声的情况在现实中是不存在的。1948年香农定理的提出解决了有噪声情况下带宽与数据速率的关系问题，香农也因此被称为信息论和数字通信时代的奠基人。</p>
+<p>香农定理表明，在高斯白噪声条件下实现无差错传输的信道容量（通常等同于最大数据速率）C可由下面的公式计算。 </p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573291829918.png" alt="1573291829918"></p>
+<p>式中，W为信道带宽，S为信号的平均功率，N为噪声的平均功率，S/N为信噪比。当噪声 为高斯白噪声时（功率谱密度为N0), N=WN0。这个公式与信号取的离散值无关，也就是说 无论用什么方式调制，只要给定了信噪比，则单位时间内最大的信息传输量就确定了。例如，信道带宽为3 000 Hz，信噪比为30 dB，则最大数据速率C≈30 000 bps。这是极限值, 只有理论上的意义。实际上在3 000 Hz带宽的电话线上数据速率能达到9 600 bps就很不错了。</p>
+<p>从专业的角度去描述，带宽的意思是指波长、频率或能量带的范围，特指频带的上、 下边界频率之差。这里可以打个比喻，带就像高速公路的路面宽度和允许的最大车速，而数据流则相当于公路上的车流。当车的数量很少时，路面宽一些和窄一些，对车速都没有任何影响；随着车流的逐渐增大，直至某个临界点，路面宽度对车流量的影响才一 下子凸显出来，路面窄的话，就不能让更多的车辆在同一时间内通过，甚至造成大塞车。 当然，我们也可以提高允许的最大车速，这样也能使得在单位时间内通过更多的车。也就 是说带宽是用来描述频带宽度的，但是在数字传输方面，也常用带宽来衡量传输数据的能力。例如，用它来表示单位时间内传输数据容量的大小、数据吞吐的能力，而数据传输能力与信道带宽的关系又可以通过香农定理联系起来。</p>
+<h4 id="噪声与信噪比"><a href="#噪声与信噪比" class="headerlink" title="噪声与信噪比"></a>噪声与信噪比</h4><p><strong>1.白噪声与高斯白噪声</strong></p>
+<p>在讨论信噪比之前，先回顾一下噪声的概念。在通信中，噪声是无处不在的，正因为有噪声的存在，才使得信息的传输存在各种限制。一般来讲，我们将自然界中存在的随机信号称为噪声，将人为施加的无用信号称为干扰。如何有效避免干扰信号的影响是另外一 个复杂的研究课题，我们只讨论噪声在数字通信中的影响。</p>
+<p>噪声，通常的概念指的是白噪声（WhiteNoise）白噪声是一种功率频谱密度为常数的随机信号或随机过程。换句话说，此信号在各个频段上的功率是一样的。相对地，其他不具有这一性质的噪声信号被称为有色噪声。理想的白噪声具有无限带宽，因而其能量无限大，这在现实世界是不可能存在的。实际上，我们常常将有限带宽的平整信号视为白噪声， 因为这样在数学分析上更加方便。一般来讲，只要一个噪声过程所具有的频谱宽度远远大 于它所作用系统的带宽，并且在该带宽中其频谱密度基本上可以作为常数来考虑，就可以 把它作为白噪声来处理。例如，热噪声和散弹噪声在很宽的频率范围内具有均匀的功率谱 密度，通常可以认为它们是白噪声。</p>
+<p>另外一个经常提到的概念是高斯白噪声（White Gaussian Noise，WGN)。如果一个噪声， 它的幅度分布服从高斯分布，而它的功率谱密度又是均匀分布的，则称它为高斯白噪声。 也就是说，高斯白噪声也属于白噪声，只是其幅度分布服从高斯分布而已。高斯白噪声在仿真中应用十分广泛，因为实际系统（包括雷达和通信系统等大多数电子系统）中的主要噪声来源是热噪声，而热噪声是典型的高斯白噪声。</p>
+<p>这里还需要再说明一下高斯白噪声对通信解调影响的直观理解。我们知道，数字通信中信噪比的大小直接会影响到解调端检测的错误概率。对于某个具体的通信体制及解调方 法，信噪比与误码率理论上有固定的换算关系。对于二进制调制方式来讲，检测端只需判 断出两种波形的区别即可正确解调出数据。例如，解调后的数据波形类似于正弦波形，这时，一定功率的噪声信号叠加上去，只要噪声的幅度大小不至于影响到信号波形的判决（判断时刻一般选在波峰或波谷处），也就是噪声的大小不会使波峰的值或波谷的值接近零值， 就不会出现误码检测的问题。我们用MATLAB仿真时，一般信噪比，如10dB,会感觉到 噪声的幅度好像根本不会出现很大值，也就是说根本不会影响到波形的判决。事实上是这 样吗？回想一下高斯分布的特征，虽然信号的大部分幅值都分布在零值附近，叠加到信号 上不会产生大的影响，但理论上每个噪声的幅度都可能是无限大的，只是大幅度的噪声值 出现的概率较小而已，当仿真的数据长度不够时，可能无法出现大幅度值的噪声值，当仿真数据长度足够时，大幅度值的噪声值将按照高斯分布的概率出现。这些大幅度值的噪声值叠加到信号上，就会引起检测的错误，产生一定的误码率。</p>
+<p><strong>2.SNR与Eb/N0</strong></p>
+<p>在模拟通信系统中，衡量信号质量的一个最重要的指标是信噪比（或称为SNR),指的是信号平均功率和噪声平均功率的比值，通常用dB单位表示。在数字通信中也有信噪比的概念，但与模拟通信不同，通常用信噪比的归一化形式(Eb/N0)作为性能指标。Eb为每比特信号的能量，等于信号功率S与每比特持续时间T的乘积 ; N0是噪声功率谱密度，等于噪声功率N与信道带宽W之比 ; 由于每比特持续时间T与比特速率R互为倒数，因此有下列表达式成立 </p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573293152736.png" alt="1573293152736"></p>
+<p>显然，只有当信道带宽W与比特速率R相等时，数字通信中的信噪比概念Eb/N0才与 S/N相同。作为数字通信系统性能的一个重要指标，可以将系统所需的Eb/N0作为比较两个通信系统性能优劣的量度。在给定的差错概率条件下，所需的Eb/N0越小，则系统性能越好。   </p>
+<p>为什么数字通信要用Eb/N0作为衡量信号质量的指标，而不用呢S/N？接下来我们就这 个问题进行解释。</p>
+<p>根据前面的讨论，功率信号定义为平均功率有限而能量无穷大的信号，而将能量信号定义为平均功率等于零而能量有限的信号。这样的分类在对模拟信号和数字信号进行比较时是非常有用的。我们将模拟信号归类为功率信号。这有什么意义呢？通常模拟波形的持续时间为无限长，不需要做分割或加时间窗。 简单说来，加时间窗会引起时域信号在频域的扩展，为减少这种频谱扩展，需要加减小扩展性能的时间窗，如汉明窗等）。对时域无限的电信号波形而言，其能量无穷大，因此不能用能量来描述该信号，而功率则是一个更有用的参数。</p>
+<p>然而，数字通信系统采用时间长度为码元间隔的波形来发送和接收码元。每个码元的平均功率（在整个时间轴上取平均）等于零，所以功率不能用于描述数字信号。对于数字信号，应该采用能在时间窗内度量信号的测度来描述。也就是说，码元能量（功率在一个码元间隔内的积分）是一个更适于描述数字信号波形的参数。</p>
+<p>接收能量可以很好地描述数字信号，但这还没有说明为什么Eb/N0是数字系统的一个很好的指标。数字波形是代表数字信息的媒介，消息可能包含1比特（二进制）、2比特（四 进制），甚至10比特（1024进制）等。与这种离散信息结构完全不同，模拟通信系统的信源是无限量化的连续波。数字系统的衡量指标必须在比特级上比较两个系统的性能。因为数字信号波形只可能包含1比特、2比特等以比特为单位的信息，所以无法用S/N对数字信号进行描述。例如，若给定差错概率，其二进制信号所需的S/N为20 dB,因为二进制波形包含1比特信息，所以每比特所需的S/N是20dB。若信号是1024进制的，所需的S/N仍为20 dB。由于该波形包含10比特信息，所以每比特所需的S/N为2 dB。由此产生一个问题，为什么不用更适合的参数——比特级别上的能量相关参数Eb/N0来描述这个指标呢？这正是数字通信采用Eb/N0来衡量信号质量的主要原因。</p>
+<h3 id="蒙特卡洛仿真概念"><a href="#蒙特卡洛仿真概念" class="headerlink" title="蒙特卡洛仿真概念"></a>蒙特卡洛仿真概念</h3><h4 id="蒙特卡洛方法概述"><a href="#蒙特卡洛方法概述" class="headerlink" title="蒙特卡洛方法概述"></a>蒙特卡洛方法概述</h4><p><strong>蒙特卡洛(Monte Carlo)方法</strong>，又称随机抽 样或统计模拟方法，泛指所有基于统计采样进行数值计算的方法 。</p>
+<p>蒙特卡洛方法是用于两类问题： –本身就具有随机性的问题； –能够转化为概率模型进行求解的确定性问题。 </p>
+<h4 id="蒙特卡洛方法一般步骤"><a href="#蒙特卡洛方法一般步骤" class="headerlink" title="蒙特卡洛方法一般步骤"></a>蒙特卡洛方法一般步骤</h4><p>• 蒙特卡洛方法求解问题的三个步骤： </p>
+<p>–构造或描述概率过程 </p>
+<p>–从已知概率分布抽样</p>
+<p> –建立估计量 </p>
+<h4 id="蒙特卡洛方法特点"><a href="#蒙特卡洛方法特点" class="headerlink" title="蒙特卡洛方法特点"></a>蒙特卡洛方法特点</h4><p>• 蒙特卡洛方法不需要对输入过程和模型本身做太多 假设，具有通用性。</p>
+<p> • 但是，蒙特卡洛方法估计的准确性与两方面的因素 有密切关系： </p>
+<p>–一方面依赖于对输入随机变量或随机过程的采样方 法，比如上例中如果产生的随机数不是(0,1)区间上 的均匀分布，那么估计将是有偏的；</p>
+<p> –另一方面依赖于随机试验次数，只有随机试验次数 足够多，才能够获得较准确的结果。 </p>
+<h4 id="一个简单的通信仿真实例"><a href="#一个简单的通信仿真实例" class="headerlink" title="一个简单的通信仿真实例"></a>一个简单的通信仿真实例</h4><p>二进制反极性基带通信系统的蒙特卡洛仿真<br>我们用反极性信号波形和来发送二进制信息0和1，s(t)是能量为的任意波形，通过AWGN（高斯白噪声）信道之后接收信号波形可以表示为</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307688214.png" alt="1573307688214"></p>
+<p>这里n(t)是高斯白噪声，其功率谱密度为</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307780877.png" alt="1573307780877"></p>
+<p>用最佳接收机接收到的信号为</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307816072.png" alt="1573307816072"></p>
+<p>此处</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307854985.png" alt="1573307854985"></p>
+<p>n的数学期望与方差</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307889116.png" alt="1573307889116"></p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307918352.png" alt="1573307918352"></p>
+<p>系统误码率可用下式计算（推导详见《通信原理》）</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573307962488.png" alt="1573307962488"></p>
+<p> 下面我们用蒙特卡洛仿真方法来估计该系统的误码率。<br>首先，建立仿真模型。由于假设接收机为理想的最佳接收机，因此没必要模拟整个信号的传输过程，而只关心最佳接收机输出端的信号组成。</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573287167758.png" alt="1573287167758"></p>
+<p>该模型中包括对两个随机过程的采样，一个是模拟二进制信源的贝努里分布，另一个是模拟最佳接收机输出端所包含高斯噪声。<br>由于假设信源和信道均无记忆，且信源和信道相互独立，因此我们对这两个随机过程进行采样，只需要产生一系列相互独立、满足概率分布的随机变量即可。我们所关心的事件是判决结果与实际传送比特相反，建立的估计量使用错误事件的出现相对频率近似系统的误码率，即</p>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573308066999.png" alt="1573308066999"></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment">%Monte Carlo Simulation to estimate bit error rate</span></div><div class="line">performance of a binary</div><div class="line"><span class="comment">%antipodal communication system</span></div><div class="line">clc</div><div class="line">clear</div><div class="line">N = [<span class="number">100</span>, <span class="number">1000</span>, <span class="number">10000</span>, <span class="number">100000</span>,<span class="number">1000000</span>];</div><div class="line">EbN0_indB = <span class="number">-2</span>:<span class="number">2</span>:<span class="number">8</span>;<span class="comment">%</span></div><div class="line">Ebn0 = <span class="number">10.</span>^(EbN0_indB/<span class="number">10</span>);</div><div class="line">E=<span class="number">1</span>;</div><div class="line">times = <span class="number">50</span>;</div><div class="line">err_rate = <span class="built_in">zeros</span>(<span class="built_in">length</span>(Ebn0),<span class="built_in">length</span>(N),times);</div><div class="line"><span class="keyword">for</span> iiii=<span class="number">1</span>:<span class="built_in">length</span>(N)</div><div class="line">   <span class="keyword">for</span> iii=<span class="number">1</span>:<span class="built_in">length</span>(Ebn0)</div><div class="line">      sigma = E/sprt(<span class="number">2</span>*Ebn0(iii));</div><div class="line">      <span class="keyword">for</span> ii = <span class="number">1</span>:<span class="number">10</span></div><div class="line">        r = <span class="built_in">rand</span>(<span class="number">1</span>,N(iiii));</div><div class="line">        source = double(r&gt;=<span class="number">0.5</span>);</div><div class="line">        x=<span class="number">1</span><span class="number">-2</span>*source;</div><div class="line">        noise = <span class="built_in">randn</span>(<span class="number">1</span>,N(iiii))*sigma;</div><div class="line">        y=E*x+noise;</div><div class="line">        result = double(y&lt;=<span class="number">0</span>);</div><div class="line">        error_num = sum(result-source&gt;<span class="number">1.e-6</span>);</div><div class="line">        err_rate(iii,iiii,ii) = error_num/N(iiii);</div><div class="line">      <span class="keyword">end</span></div><div class="line">    <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p><img src="/2019/11/09/MATLAB2/D:/PortableHexo\PortableHexo\hexo\source\_posts\MATLAB2\1573287768315.png" alt="1573287768315"></p>
+<p>可以看出，在同一信噪比条件下，仿真量越大相对误差的偏差越小；如果固定仿真量，相对误差的方差则随着信噪比的提高而迅速增大。</p>
+<h3 id="通信系统仿真一般结构"><a href="#通信系统仿真一般结构" class="headerlink" title="通信系统仿真一般结构"></a>通信系统仿真一般结构</h3><p>matlab通信仿真的代码遵循模块化设计思想，属于不同模块的代码段与代码段间应隔开并附上代码段功能注释。</p>
+<p>一个<strong>完整的matlab通信仿真程序</strong>一般由以下模块构成</p>
+<p><strong>参数设定</strong></p>
+<p><strong>信源</strong></p>
+<p><strong>发射机</strong></p>
+<p><strong>信道</strong></p>
+<p><strong>接收机</strong></p>
+<p><strong>信宿</strong></p>
+<p><strong>仿真结果（比特信噪比 眼图 星座图等）</strong></p>
+<p><strong>结论</strong></p>
+<h3 id="通信仿真函数集"><a href="#通信仿真函数集" class="headerlink" title="通信仿真函数集"></a>通信仿真函数集</h3><p>以下函数可使用help&lt;函数名&gt;的命令查询帮助文档，此处仅列出以供查用</p>
+<h4 id="数字信号处理部分"><a href="#数字信号处理部分" class="headerlink" title="数字信号处理部分"></a>数字信号处理部分</h4><p><a href="https://blog.csdn.net/reborn_lee/article/details/82868837" target="_blank" rel="external">https://blog.csdn.net/reborn_lee/article/details/82868837</a></p>
+<h4 id="通信系统部分"><a href="#通信系统部分" class="headerlink" title="通信系统部分"></a>通信系统部分</h4><p><a href="http://bbs.21ic.com/icview-386187-1-1.html?_dsign=3d24a5ed" target="_blank" rel="external">http://bbs.21ic.com/icview-386187-1-1.html?_dsign=3d24a5ed</a></p>
+
+  </div>
+  <!--评论块-->
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2019/11/09/MATLAB1/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MATLAB通信仿真（二）"><span class="post-toc-number">1.</span> <span class="post-toc-text">MATLAB通信仿真（二）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#通信仿真基础知识"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">通信仿真基础知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数字通信系统基础概念"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">数字通信系统基础概念</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#与频谱相关的概念"><span class="post-toc-number">1.1.1.1.</span> <span class="post-toc-text">与频谱相关的概念</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#带宽是如何定义的"><span class="post-toc-number">1.1.1.2.</span> <span class="post-toc-text">带宽是如何定义的</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#噪声与信噪比"><span class="post-toc-number">1.1.1.3.</span> <span class="post-toc-text">噪声与信噪比</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#蒙特卡洛仿真概念"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">蒙特卡洛仿真概念</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#蒙特卡洛方法概述"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">蒙特卡洛方法概述</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#蒙特卡洛方法一般步骤"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">蒙特卡洛方法一般步骤</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#蒙特卡洛方法特点"><span class="post-toc-number">1.1.2.3.</span> <span class="post-toc-text">蒙特卡洛方法特点</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#一个简单的通信仿真实例"><span class="post-toc-number">1.1.2.4.</span> <span class="post-toc-text">一个简单的通信仿真实例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#通信系统仿真一般结构"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">通信系统仿真一般结构</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#通信仿真函数集"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">通信仿真函数集</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#数字信号处理部分"><span class="post-toc-number">1.1.4.1.</span> <span class="post-toc-text">数字信号处理部分</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#通信系统部分"><span class="post-toc-number">1.1.4.2.</span> <span class="post-toc-text">通信系统部分</span></a></li></ol></li></ol></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p >Copyright ©  2017  SunnyFHY</p>
+<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+<p style="font-size: 10px" id="footer-times" data-time="10/01/2018 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>
